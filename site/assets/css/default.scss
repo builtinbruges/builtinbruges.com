@@ -134,15 +134,25 @@ article {
 		margin: 0 0 0 166px;
 
 		p {
-			text-indent: 20px;
 			margin: 0 0 30px;
 		}
 		strong {
 			font-weight: 600;
 		}
+		em {
+			font-style: italic;
+		}
 		li {
 			list-style: disc;
 			margin: 0 0 30px 20px;
+		}
+		blockquote {
+			margin: -20px 0 20px;
+			background: #f9f9f9;
+			padding: 20px;
+		}
+		blockquote p:last-child {
+			margin: 0;
 		}
 	}
 }
@@ -158,8 +168,8 @@ article {
 	time {
 		text-align: right;
 		float: left;
-		width: 132px;
-		font: 22px/40px "droid-serif-1","droid-serif-2", Georgia, "Times New Roman", serif;
+		width: 142px;
+		font: 18px/40px "droid-serif-1","droid-serif-2", Georgia, "Times New Roman", serif;
 		color: #9B9B9B;
 	}
 	li a {

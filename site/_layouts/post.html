@@ -13,7 +13,10 @@
     <body>
     {% include header.html %}
 
-    {{ content }}
+	<section class="wrapper">
+		{% assign post = page %}
+		{% include show_post.html %}
+	</section>
 
     {% include footer.html %}
   </body>
