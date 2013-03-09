@@ -1,0 +1,7 @@
+<article>
+	<h1>{{ post.title }}</h1>
+	<time datetime="{{ post.date }}">{{ post.date | date:'%B %d' }}</time>
+	<section class="content">
+		{{ post.content }}
+	</section>
+</article>

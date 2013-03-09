@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    <meta name="author" content="{{ site.author.name }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include css.html %}
+    {% include analytics.html %}
+    {% include typekit.html %}
+  </head>
+    <body>
+    <header>
+      <h1 class="logo">Bert Devriese</h1>
+      <h3>
+        Hi, I'm Bert Devriese. I work at <a href="http://www.trinch.com">Trinch Webstudio</a>.<br />
+        I also freelance at <a href="http://www.builtinbruges.be">Built In Bruges</a>.
+      </h3>
+    </header>
+
+    {{ content }}
+
+    <footer>
+      <ul>
+        <li>&copy; {{ site.time | date: '%Y' }}</li>
+        <li>{{ site.author.name }}</li>
+        <li><a href="http://www.twitter.com/{{ site.author.twitter }}">@{{ site.author.twitter }}</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

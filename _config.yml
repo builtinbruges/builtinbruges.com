@@ -1,0 +1,34 @@
+permalink: /:year/:month/:title
+
+server: true
+server_port: 4000
+auto: true
+
+markdown: rdiscount
+
+source: ./site
+plugins: ./site/_plugins
+destination: ./web
+
+asset_path : assets
+
+title: Bert Devriese
+author:
+  name: Bert Devriese
+  email: bert.devriese@gmail.com
+  github: brtdv
+  twitter: brtdv
+  dribbble: brtdv
+
+typekit:
+  kit_id: xdx8gfw
+
+sass:
+  syntax: scss
+  style: compressed
+
+analytics:
+  tracker_id: UA-25591427-1
+  tracker_domain: bertdevriese.be
+
+exclude: [Gemfile]
