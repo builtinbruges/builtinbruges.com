@@ -1,0 +1,11 @@
+
+/* This is the part you will want to copy if you want to use the font-face glyphs on your own websites */
+@font-face {
+  font-family: Socialglyphs;
+  font-family: "Socialglyphs";
+  src: url(../font/socialglyphs-regular.svg#socialglyphs-regular) format("svg"),
+    url(../font/socialglyphs-regular.ttf) format("truetype"),
+    url(../font/socialglyphs-regular.woff) format("woff"),
+    url(../font/socialglyphs-regular.eot);
+}
+

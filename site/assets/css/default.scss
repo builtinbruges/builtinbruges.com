@@ -108,7 +108,32 @@ header {
 		font-size: 22px;
 		text-align: center;
 		padding: 0 20px;
+		margin: 0 0 20px;
+	}
+
+	.social {
+		text-align: center;
 		margin: 0 0 40px;
+
+		li {
+			display: inline;
+
+			a {
+				display: block;
+				font-family: Socialglyphs, sans-serif;
+				font-size: 24px;
+
+				display: inline-block;
+				color: #1375D2;
+				border-radius: 40px;
+				padding: 0 5px 5px;
+			}
+			a:hover {
+				background: #1375D2;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
 	}
 }
 
