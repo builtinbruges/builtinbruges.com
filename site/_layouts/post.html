@@ -10,13 +10,25 @@
     {% include analytics.html %}
     {% include typekit.html %}
   </head>
-    <body>
+  <body>
     {% include header.html %}
 
-	<section class="wrapper">
-		{% assign post = page %}
-		{% include show_post.html %}
-	</section>
+    <section class="wrapper">
+      {% assign post = page %}
+      {% include show_post.html %}
+
+    {% if page.next != null or page.previous != null %}
+      <ul class="sibling-navigation">
+      {% if page.next != null %}
+        <li class="next"><span>&rarr;</span> <a href="{{ page.next.url }}" title="{{ page.next.title | escape }}">{{ page.next.title }}</a></li>
+      {% endif %}
+      {% if page.previous != null %}
+        <li class="previous"><span>&larr;</span> <a href="{{ page.previous.url }}" title="{{ page.previous.title | escape }}">{{ page.previous.title }}</a></li>
+      {% endif %}
+      </ul>
+    {% endif %}
+
+    </section>
 
     {% include footer.html %}
   </body>

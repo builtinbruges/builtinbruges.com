@@ -11,8 +11,11 @@ layout: default
   <div class="archive-widget">
     <h3>Older Posts</h3>
     <ul>
-    {% for post in site.posts offset:1 limit:20 %}
-      <li><time datetime="{{ post.date }}">{{ post.date | date:'%B %d' }}</time> <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% for post in site.posts offset:1 limit:5 %}
+      <li>
+        <time datetime="{{ post.date }}" title="{{ post.date | date:'%x' }}">{{ post.date | date:'%B %d' }}</time>
+        <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape }}">{{ post.title }}</a>
+      </li>
     {% endfor %}
     </ul>
   </div>

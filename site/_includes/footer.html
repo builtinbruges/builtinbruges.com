@@ -5,5 +5,16 @@
         <li>&copy; {{ site.time | date: '%Y' }}</li>
         <li>{{ site.author.name }}</li>
         <li><a href="http://www.twitter.com/{{ site.author.twitter }}">@{{ site.author.twitter }}</a></li>
+  {% for node in site.pages %}
+    {% if node.title != null %}
+      {% if "footer" == node.group %}
+        {% if page.url == node.url %}
+        <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
+        {% else %}
+        <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
       </ul>
     </footer>

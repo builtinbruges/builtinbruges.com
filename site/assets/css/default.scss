@@ -160,7 +160,7 @@ article {
 .archive-widget {
 	padding: 30px 0;
 
-	h3 {
+	h1, h3 {
 		font: 28px/40px "proxima-nova-1","proxima-nova-2", Helvetica, Arial, Verdana, sans-serif;
 		font-weight: 700;
 		margin: 0 0 10px 166px;
@@ -175,6 +175,17 @@ article {
 	li a {
 		display: block;
 		margin: 0 0 0 166px;
+	}
+}
+
+.sibling-navigation {
+	height: 30px;
+
+	.previous {
+		float: left;
+	}
+	.next {
+		float: right;
 	}
 }
 
