@@ -1,3 +1,10 @@
+@mixin transition($properties) {
+	-webkit-transition: $properties;
+	-moz-transition: $properties;
+	-ms-transition: $properties;
+	transition: $properties;
+}
+
 /* reset */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -38,7 +45,10 @@ table {
 body {
 	background: #fff;
 	color: #333;
-	font: 22px/40px "droid-serif-1","droid-serif-2", Georgia, "Times New Roman", serif;
+	font-family: "droid-serif-1","droid-serif-2", Georgia, "Times New Roman", serif;
+	font-size: 22px;
+	line-height: 40px;
+	@include transition(font-size 250ms)
 }
 a {
 	color: #1375D2;
@@ -76,8 +86,9 @@ a:hover {
 
 /* wrapper */
 .wrapper {
+	width: 940px;
 	margin: 0 auto;
-	width: 960px;
+	padding: 0 20px;
 }
 
 header {
@@ -93,7 +104,8 @@ header {
 	}
 
 	h3 {
-		font: 22px/40px "proxima-nova-1","proxima-nova-2", Helvetica, Arial, Verdana, sans-serif;
+		font-family: "proxima-nova-1","proxima-nova-2", Helvetica, Arial, Verdana, sans-serif;
+		font-size: 22px;
 		text-align: center;
 		padding: 0 20px;
 		margin: 0 0 40px;
@@ -118,7 +130,9 @@ footer {
 
 article {
 	h1 {
-		font: 48px/60px "proxima-nova-1","proxima-nova-2", Helvetica, Arial, Verdana, sans-serif;
+		font-family: "proxima-nova-1","proxima-nova-2", Helvetica, Arial, Verdana, sans-serif;
+		font-size: 38px;
+		line-height: 50px;
 		font-weight: 700;
 		color: #222;
 		margin: 0 0 10px 166px;
@@ -127,7 +141,8 @@ article {
 		text-align: right;
 		float: left;
 		width: 132px;
-		font: 22px/40px "droid-serif-1","droid-serif-2", Georgia, "Times New Roman", serif;
+		font-family: "droid-serif-1","droid-serif-2", Georgia, "Times New Roman", serif;
+		font-size: 22px;
 		color: #9B9B9B;
 	}
 	.content {
@@ -161,7 +176,8 @@ article {
 	padding: 30px 0;
 
 	h1, h3 {
-		font: 28px/40px "proxima-nova-1","proxima-nova-2", Helvetica, Arial, Verdana, sans-serif;
+		font-family: "proxima-nova-1","proxima-nova-2", Helvetica, Arial, Verdana, sans-serif;
+		font-size: 28px;
 		font-weight: 700;
 		margin: 0 0 10px 166px;
 	}
@@ -169,7 +185,8 @@ article {
 		text-align: right;
 		float: left;
 		width: 142px;
-		font: 18px/40px "droid-serif-1","droid-serif-2", Georgia, "Times New Roman", serif;
+		font-family: "droid-serif-1","droid-serif-2", Georgia, "Times New Roman", serif;
+		font-size: 18px;
 		color: #9B9B9B;
 	}
 	li a {
@@ -180,12 +197,22 @@ article {
 
 .sibling-navigation {
 	height: 30px;
+	margin: 60px 0 0 166px;
 
 	.previous {
 		float: left;
+
+		span {
+			margin: 0 5px 0 0;
+		}
 	}
 	.next {
 		float: right;
+
+		span {
+			float: right;
+			margin: 0 0 0 5px;
+		}
 	}
 }
 
@@ -194,5 +221,94 @@ article {
 	.logo {
 		background: url(../img/logo@2x.png);
 		background-size: 55px 85px;
+	}
+}
+@media (min-width: 1200px) {
+	.wrapper {
+		width: 1160px;
+	}
+	article {
+		h1 {
+			font-size: 48px;
+			line-height: 60px;
+		}
+	}
+}
+@media (max-width: 960px) {
+	.wrapper {
+		width: auto;
+	}
+}
+@media (max-width: 767px) {
+	body {
+		font-size: 18px;
+		line-height: 34px;
+	}
+	header h3 {
+
+	}
+	article {
+		h1 {
+			font-size: 32px;
+			line-height: 40px;
+		}
+		time {
+			font-size: 18px;
+		}
+	}
+}
+@media (max-width: 660px) {
+	article {
+		h1 {
+			margin: 0 0 5px 0;
+		}
+		time {
+			text-align: left;
+			display: block;
+			width: auto;
+			float: none;
+		}
+		.content {
+			margin: 0;
+		}
+	}
+	.sibling-navigation {
+		height: auto;
+		margin: 60px 0;
+
+		.previous, .next {
+			float: none;
+
+			span {
+				float: none;
+				margin: 0 5px 0 0;
+			}
+		}
+	}
+	.archive-widget {
+		padding: 30px 20px;
+
+		h1, h3 {
+			margin: 0 0 10px 0;
+		}
+		time {
+			display: none;
+		}
+		li {
+			list-style: disc;
+			margin: 0 0 0 20px;
+		}
+		li a {
+			margin: 0;
+		}
+	}
+}
+@media (max-width: 400px) {
+	footer {
+		font-size: 14px;
+
+		li:not(:last-child):after {
+			margin: 0 5px;
+		}
 	}
 }

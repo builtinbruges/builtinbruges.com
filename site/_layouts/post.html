@@ -20,10 +20,10 @@
     {% if page.next != null or page.previous != null %}
       <ul class="sibling-navigation">
       {% if page.next != null %}
-        <li class="next"><span>&rarr;</span> <a href="{{ page.next.url }}" title="{{ page.next.title | escape }}">{{ page.next.title }}</a></li>
+        <li class="next"><span>&rarr;</span><a href="{{ page.next.url }}" title="{{ page.next.title | escape }}">{{ page.next.title }}</a></li>
       {% endif %}
       {% if page.previous != null %}
-        <li class="previous"><span>&larr;</span> <a href="{{ page.previous.url }}" title="{{ page.previous.title | escape }}">{{ page.previous.title }}</a></li>
+        <li class="previous"><span>&larr;</span><a href="{{ page.previous.url }}" title="{{ page.previous.title | escape }}">{{ page.previous.title }}</a></li>
       {% endif %}
       </ul>
     {% endif %}
