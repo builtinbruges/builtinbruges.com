@@ -6,6 +6,11 @@ auto: true
 
 markdown: rdiscount
 
+pygments: true
+
+rdiscount:
+  extensions: [autolink]
+
 source: ./site
 plugins: ./site/_plugins
 destination: ./web
