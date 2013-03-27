@@ -46,7 +46,7 @@ body {
 	background: #fff;
 	color: #333;
 	font-family: "droid-serif-1","droid-serif-2", Georgia, "Times New Roman", serif;
-	font-size: 22px;
+	font-size: 18px;
 	line-height: 40px;
 	@include transition(font-size 250ms)
 }
@@ -205,13 +205,15 @@ article {
 		}
 		code {
 			font-family: "Source Code Pro", "Monaco", "Courier New";
-			font-size: 18px;
+			font-size: 14px;
 
 		}
 		p {
 			margin: 0 0 30px;
 
 			code {
+				display: inline-block;
+				line-height: 22px;
 				background: #f1f1f1;
 				padding: 0 5px;
 				border: 1px solid #ccc;
@@ -219,12 +221,13 @@ article {
 			}
 		}
 		pre {
+			overflow: auto;
 			background: #f1f1f1;
-			padding: 0 5px;
 			border: 1px solid #ccc;
 			border-radius: 3px;
+			line-height: 26px;
 			margin: 0 0 30px;
-			overflow: auto;
+			padding: 5px 10px;
 		}
 		strong {
 			font-weight: 600;
@@ -360,7 +363,7 @@ article {
 }
 @media (max-width: 767px) {
 	body {
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 34px;
 	}
 	header h3 {
