@@ -1,5 +1,10 @@
 <article>
-	<h1>{{ post.title }}</h1>
+
+    {% if page.source_url %}
+	<h1><a href="{{ post.source_url }}" title="{{ post.title | escape }}" data-external="Y">{{ post.title }}</a></h1>
+    {% else %}
+	<h1><a href="{{ post.url }}" title="{{ post.title | escape }}">{{ post.title }}</a> <span>⨰</span></h1>
+    {% endif %}
 	<time datetime="{{ post.date }}">{{ post.date | date:'%B %d' }}</time>
 	<section class="content">
 		{{ post.content | markdownify }}

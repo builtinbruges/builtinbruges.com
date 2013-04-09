@@ -161,6 +161,20 @@ article {
 		font-weight: 700;
 		color: #222;
 		margin: 0 0 10px 166px;
+
+		a,
+		a:visited {
+			color: #333;
+		}
+		a[data-external=true]:visited {
+			color: #444;
+		}
+		span {
+			color: #666;
+			font-weight: normal;
+			font-size: 28px;
+			vertical-align: middle;
+		}
 	}
 	time {
 		text-align: right;
