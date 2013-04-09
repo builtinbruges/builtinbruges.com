@@ -1,6 +1,7 @@
 ---
 title: Webkit for developers
 layout: post
+date: 2013-04-09 22:00:00 +02:00
 source_url: http://paulirish.com/2013/webkit-for-developers/
 ---
 With Google's [Blink announcement][blink_announcement] and Mozilla's [Servo announcent][servo_announcement] last week, I encourage everyone to read [Webkit for Developers][webkit_for_developers], a blogpost by [Paul Irish][paul_irish], to understand the current Webkit situation.
