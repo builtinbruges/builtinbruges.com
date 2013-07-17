@@ -17,23 +17,23 @@ destination: ./web
 
 asset_path : assets
 
-title: Bert Devriese
+title: Built In Bruges
 author:
   name: Bert Devriese
-  email: bert.devriese@gmail.com
-  github: brtdv
-  twitter: brtdv
-  dribbble: brtdv
+  email: hello@builtinbruges.com
+  github: builtinbruges
+  twitter: builtinbruges
+  dribbble: builtinbruges
 
 typekit:
-  kit_id: xdx8gfw
+  kit_id: kxh3qqe
 
 sass:
   syntax: scss
   style: compressed
 
 analytics:
-  tracker_id: UA-25591427-1
-  tracker_domain: bertdevriese.be
+  tracker_id: UA-40297203-1
+  tracker_domain: builtinbruges.com
 
 exclude: [README.md]
