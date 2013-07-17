@@ -1,6 +1,6 @@
 # Description
 
-This repo contains the layout and posts of my personal blog on bertdevriese.be
+This repo contains the layout and posts of the website on [builtinbruges.com](http://www.builtinbruges.com)
 
 # Requirements
 
