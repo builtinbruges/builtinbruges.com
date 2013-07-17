@@ -1,11 +1,15 @@
 <article>
-    {% if post.source_url %}
-	<h1><a href="{{ post.source_url }}" title="{{ post.title | escape }}" data-external="Y">{{ post.title }}</a></h1>
-    {% else %}
-	<h1><a href="{{ post.url }}" title="{{ post.title | escape }}">{{ post.title }}</a> <span>⨰</span></h1>
-    {% endif %}
-	<time datetime="{{ post.date }}">{{ post.date | date:'%B %d' }}</time>
-	<section class="content">
-		{{ post.content | markdownify }}
-	</section>
+	<div class="wrapper">
+		<hgroup>
+	    {% if post.source_url %}
+			<h1><a href="{{ post.source_url }}" title="{{ post.title | escape }}" data-external="Y">{{ post.title }}</a></h1>
+	    {% else %}
+			<h1><a href="{{ post.url }}" title="{{ post.title | escape }}">{{ post.title }}</a></h1>
+	    {% endif %}
+			<time datetime="{{ post.date }}"><a href="{{ post.url }}" title="{{ post.title | escape }}">{{ post.date | date:'%B %d' }}</a></time>
+		</hgroup>
+		<section class="content">
+			{{ post.content | markdownify }}
+		</section>
+	</div>
 </article>

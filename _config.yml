@@ -4,12 +4,19 @@ server: true
 server_port: 4000
 auto: true
 
-markdown: rdiscount
+markdown: redcarpet
 
 pygments: true
 
 rdiscount:
   extensions: [autolink]
+
+redcarpet:
+  extensions: [autolink]
+
+paginate_file: blog.html
+paginate_path: "blog/page:num"
+paginate: 10
 
 source: ./site
 plugins: ./site/_plugins

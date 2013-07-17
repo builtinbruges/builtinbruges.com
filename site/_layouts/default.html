@@ -7,14 +7,17 @@
     <meta name="author" content="{{ site.author.name }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% include css.html %}
+    {% include js.html %}
     {% include analytics.html %}
     {% include typekit.html %}
   </head>
   <body>
-    {% include header.html %}
+    <div id="height-container">
+      {% include header.html %}
 
-    {{ content }}
-
+      {{ content }}
+      <div id="push"></div>
+    </div>
     {% include footer.html %}
   </body>
 </html>

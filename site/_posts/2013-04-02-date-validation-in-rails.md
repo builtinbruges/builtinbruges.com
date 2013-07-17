@@ -8,8 +8,9 @@ I came accross this [great gem][date_validator]: [date_validator][date_validator
 
 Install it by adding it to your `Gemfile` and `sudo bundle install` and boom! Validating dates is now a piece of cake:
 
-    validates :expiration_date,
-      :date => { :after => Time.now, :before => Time.now + 1.year }
-
+```ruby
+validates :expiration_date,
+  :date => { :after => Time.now, :before => Time.now + 1.year }
+```
 
 [date_validator]: https://github.com/codegram/date_validator

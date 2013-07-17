@@ -1,20 +1,15 @@
 
 
     <footer>
-      <ul>
-        <li>&copy; {{ site.time | date: '%Y' }}</li>
-        <li>{{ site.author.name }}</li>
-        <li><a href="http://www.twitter.com/{{ site.author.twitter }}">@{{ site.author.twitter }}</a></li>
-  {% for node in site.pages %}
-    {% if node.title != null %}
-      {% if "footer" == node.group %}
-        {% if page.url == node.url %}
-        <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
-        {% else %}
-        <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-      </ul>
+      <div class="wrapper">
+        <ul class="about">
+          <li>&copy; {{ site.time | date: '%Y' }}</li>
+          <li><em>{{ site.title }}</em></li>
+        </ul>
+        <ul class="social">
+          <li><a href="http://www.twitter.com/builtinbruges"><span class="icon-twitter"></span></a></li>
+          <li><a href="http://www.github.com/builtinbruges"><span class="icon-github"></span></a></li>
+          <li><a href="http://www.dribbble.com/builtinbruges"><span class="icon-dribbble"></span></a></li>
+        </ul>
+      </div>
     </footer>

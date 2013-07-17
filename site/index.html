@@ -1,14 +1,19 @@
 ---
-title: Archive
-description: Archive of all blog posts
+title: Home
+description: The personal blog of Bert Devriese
 layout: default
-group: footer
 ---
-<section class="wrapper">
+<section class="posts">
+{% for post in site.posts limit:1 %}
+    {% include show_post.html %}
+{% endfor %}
+</section>
+
+<div class="wrapper">
   <div class="archive-widget">
-    <h1>Post Archive</h1>
+    <h3>Older Posts</h3>
     <ul>
-    {% for post in site.posts %}
+    {% for post in site.posts offset:1 limit:10 %}
       <li>
         <time datetime="{{ post.date }}" title="{{ post.date | date:'%x' }}">{{ post.date | date:'%B %d' }}</time>
         <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title | escape }}">{{ post.title }}</a>
@@ -16,4 +21,4 @@ group: footer
     {% endfor %}
     </ul>
   </div>
-</section>
+</div>
