@@ -519,6 +519,37 @@ article:nth-child(even) {
 	}
 }
 
+/* Floormat */
+.floormat {
+	font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	background: #40464F;
+	color: #F05151;
+	text-align: center;
+	padding: 50px 0;
+
+	h3 {
+		text-transform: uppercase;
+		font-size: 26px;
+		font-weight: 600;
+		margin: 0 0 20px;
+	}
+
+	a.button {
+		display: inline-block;
+		padding: 5px 15px;
+		border-radius: 2px;
+		font-size: 22px;
+		font-weight: 600;
+		color: #fff;
+		background: #F05151;
+		text-transform: uppercase;
+	}
+	a.button:hover {
+		text-decoration: none;
+		background: #F26363;
+	}
+}
+
 /* Retina Support */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 	.logo {
