@@ -2,9 +2,7 @@ permalink: /:year/:month/:title
 
 full_url: http://www.builtinbruges.com
 
-server: true
-server_port: 4000
-auto: true
+port: 4000
 
 markdown: redcarpet
 
