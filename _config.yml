@@ -1,7 +1,5 @@
 permalink: /:year/:month/:title
 
-full_url: http://www.builtinbruges.com
-
 server: true
 server_port: 4000
 auto: true

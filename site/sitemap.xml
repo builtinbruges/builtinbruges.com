@@ -11,7 +11,7 @@ title : RSS Feed
 
 {% for post in site.posts %}
         <url>
-                <loc>{{ site.full_url }}{{ post.url }}</loc>
+                <loc>{{ post.url }}</loc>
                 <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
                 <changefreq>daily</changefreq>
         </url>
