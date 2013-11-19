@@ -7,4 +7,4 @@ I stumbled on this [blog post](http://blog.pop.co/post/67465239611/why-we-chose-
 
 > By going API first, we set ourselves up to drink our own Kool-Aid so to speak. We are a client of our own API and truly utilize every endpoint. As we add more functionality, we are already in a position to offer it to consumers when the time is right
 
-I've had the *privilege* to work on some integrations with crappy API's myself and I can definately confirm that getting to use a nice API makes for half of the work. Working API-first ensures you can achieve this at your own company.
+I've had the *privilege* to work on some integrations with crappy API's myself and I can definitely confirm that getting to use a nice API makes for half of the work. Working API-first ensures you can achieve this at your own company.
