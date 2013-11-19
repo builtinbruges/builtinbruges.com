@@ -1,9 +1,5 @@
 permalink: /:year/:month/:title
 
-server: true
-server_port: 4000
-auto: true
-
 markdown: redcarpet
 
 pygments: true
@@ -14,7 +10,7 @@ rdiscount:
 redcarpet:
   extensions: [autolink]
 
-paginate_file: blog.html
+paginate_file: index.html
 paginate_path: "blog/page:num"
 paginate: 10
 
