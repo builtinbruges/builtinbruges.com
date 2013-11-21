@@ -32,7 +32,7 @@ typekit:
   kit_id: kxh3qqe
 
 sass:
-  syntax: scss
+  syntax: sass
   style: compressed
 
 analytics:
