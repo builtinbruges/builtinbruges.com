@@ -1,3 +1,5 @@
-  <link href="/{{ site.asset_path }}/css/default.css?v=3" rel="stylesheet" type="text/css" media="all">
-  <link href="/{{ site.asset_path }}/css/code.css?v=3" rel="stylesheet" type="text/css" media="all">
-  <link href="/{{ site.asset_path }}/css/fonts.css?v=3" rel="stylesheet" type="text/css" media="all">
+{% css_asset_tag builtinbruges %}
+- /_assets/css/default.css.sass
+- /_assets/css/code.css.sass
+- /_assets/css/fonts.css.sass
+{% endcss_asset_tag %}
