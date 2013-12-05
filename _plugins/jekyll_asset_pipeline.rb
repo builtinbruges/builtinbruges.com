@@ -4,7 +4,12 @@ module JekyllAssetPipeline
 
   # Sass Preprocessing
   class SassConverter < JekyllAssetPipeline::Converter
-    require 'sass'
+    require 'jekyll_asset_pipeline'
+    require 'compass'
+
+    Compass.sass_engine_options[:load_paths].each do |path|
+      Sass.load_paths << path
+    end
 
     def self.filetype
       '.sass'
