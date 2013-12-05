@@ -20,5 +20,8 @@ xcuserdata
 .svn
 CVS
 
-# build directory
-web/*
+# jekyll build directory
+_site/*
+
+# sass noise
+.sass-cache
