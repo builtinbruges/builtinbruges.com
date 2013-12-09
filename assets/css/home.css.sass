@@ -1,5 +1,6 @@
 @import "compass/css3/images"
 @import "compass/css3/transition"
+@import "compass/css3/shared"
 @import "compass/utilities/general/clearfix"
 
 .home
@@ -81,9 +82,11 @@
 					text-decoration: none
 					background: #434A60
 					padding: 20px
+					+experimental(transition, border-radius 150ms )
 
 					&:hover
 						background: #555C77
+						border-radius: 10px
 
 				span
 					float: right
@@ -148,3 +151,43 @@
 				&:hover
 					color: #555C77
 
+@media screen and (max-width: 880px)
+	.home
+		.wrapper
+			width: 100%
+
+		.about,
+		.services
+			float: none
+			margin: 0 auto
+
+@media screen and (max-width: 500px)
+	.home
+		h1
+			max-width: 100%
+			width: auto
+			height: 0
+			padding-bottom: 100%
+			background-size: contain
+			background-repeat: no-repeat
+
+		hgroup
+			h2
+				font-size: 24px
+			h3
+				font-size: 16px
+
+		.about,
+		.services
+			width: 100%
+
+		.services
+			li
+				margin: 0 0 20px
+
+		footer
+			padding: 0 0 30px
+
+			ul.social
+				display: block
+				margin: 30px 0
