@@ -12,7 +12,7 @@ $(document).ready(function ()
 			$('h1.logo').addClass('animation')
 		}
 
-		logo_img.src = '/assets/img/logo.png';
+		// Make sure image is always loaded so animation gets always displayed
+		logo_img.src = '/assets/img/logo.png?v='+(new Date()).getMilliseconds();
 	}
-
-})
+});
