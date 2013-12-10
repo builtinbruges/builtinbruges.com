@@ -38,7 +38,7 @@
     }
 }
 
-.home h1 {
+.home h1.animation {
     -webkit-animation: zoomIn 450ms cubic-bezier(0, .70, .35, .87) normal;
     animation: zoomIn 450ms cubic-bezier(0, .70, .35, .87) normal
 }
