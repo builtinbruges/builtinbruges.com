@@ -1,9 +1,11 @@
 ---
 title: Blog
-description: Overview of the recent blog posts
+description: An overview of the recent blog posts
 layout: default
-group: header
-identifier: blog
+
+nav-group: header
+nav-title: Blog
+nav-weight: 2
 ---
 <section class="posts">
 {% for post in site.posts limit:5 %}

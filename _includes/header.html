@@ -1,22 +1,18 @@
-
-    <header>
-      <div class="wrapper">
-        <a href="/" title="{{ site.name }}"><h1>Built In <em>Bruges</em></h1></a>
-        <nav>
-          <ul>
-      {% for node in site.pages %}
-        {% if node.title != null and node.group == "header" and (node.identifier == nil or (node.identifier == "blog" and blog_shown == nil)) %}
-          {% if node.identifier == "blog" %}
-            {% assign blog_shown = true %}
-          {% endif %}
-          {% if page.url == node.url %}
-            <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
-          {% else %}
-            <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-         </ul>
-        </nav>
-      </div>
-    </header>
+	<header>
+		<div class="wrapper">
+			<a href="/" title="{{ site.name }}"><h1>Built In <em>Bruges</em></h1></a>
+			<nav>
+				<ul>
+					{% sorted_for node in site.pages sort_by:nav-weight %}
+						{% if node.title != null and node.nav-group == "header" %}
+							{% if page.url == node.url %}
+								<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.nav-title}}</a></li>
+							{% else %}
+								<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.nav-title}}</a></li>
+							{% endif %}
+						{% endif %}
+					{% endsorted_for %}
+				</ul>
+			</nav>
+		</div>
+	</header>

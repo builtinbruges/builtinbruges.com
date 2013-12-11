@@ -1,7 +1,11 @@
 permalink: /:year/:month/:title
+post_dirs: true
 
 markdown: redcarpet
 pygments: true
+
+timezone: Europe/Brussels
+encoding: UTF-8
 
 name: Built In Bruges
 author:

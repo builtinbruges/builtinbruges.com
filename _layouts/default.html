@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="home">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ page.title }} — {{ site.name }}</title>
@@ -12,6 +12,7 @@
 		{% include typekit.html %}
 	</head>
 	<body>
+		{% include header.html %}
 		{{ content }}
 	</body>
 </html>

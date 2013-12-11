@@ -2,6 +2,10 @@
 title: Front-End Development / Web Design / Web Development
 description: Built In Bruges — Quality front-end development, web design & web development from the beautiful Bruges, Belgium
 layout: index
+
+nav-group: header
+nav-title: Home
+nav-weight: 1
 ---
 <div class="wrapper">
 	<section class="about">
@@ -29,6 +33,19 @@ layout: index
 		</li>
 	</ul>
 </div>
+<nav>
+	<ul>
+{% sorted_for node in site.pages sort_by:nav-weight %}
+{% if node.nav-title != null and node.nav-group == "header" %}
+ 	{% if page.url == node.url %}
+	<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.nav-title}}</a></li>
+	{% else %}
+	<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.nav-title}}</a></li>
+	{% endif %}
+{% endif %}
+{% endsorted_for %}
+ </ul>
+</nav>
 <!--
 <nav>
 	<div class="wrapper">
