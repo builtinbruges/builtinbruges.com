@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="home">
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}" class="home">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ page.title }} — {{ site.name }}</title>

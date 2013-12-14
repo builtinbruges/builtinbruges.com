@@ -33,29 +33,19 @@ nav-weight: 1
 		</li>
 	</ul>
 </div>
-<nav>
-	<ul>
-{% sorted_for node in site.pages sort_by:nav-weight %}
-{% if node.nav-title != null and node.nav-group == "header" %}
- 	{% if page.url == node.url %}
-	<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.nav-title}}</a></li>
-	{% else %}
-	<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.nav-title}}</a></li>
-	{% endif %}
-{% endif %}
-{% endsorted_for %}
- </ul>
-</nav>
 <!--
 <nav>
-	<div class="wrapper">
-		<ul>
-			<li><a href="#">Blog</a></li>
-			<li><a href="#">Client Work</a></li>
-			<li><a href="#">Other Work</a></li>
-			<li><a href="#">Contact Me <span class="icon-envelope"></span></a></li>
-		</ul>
-	</div>
+	<ul>
+	{% sorted_for node in site.pages sort_by:nav-weight %}
+		{% if node.nav-title != null and node.nav-group == "header" %}
+		 	{% if page.url == node.url %}
+			<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.nav-title}}</a></li>
+			{% else %}
+			<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.nav-title}}</a></li>
+			{% endif %}
+		{% endif %}
+	{% endsorted_for %}
+ </ul>
 </nav>
 -->
 <footer>

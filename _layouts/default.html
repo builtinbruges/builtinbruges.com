@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}">
 	<head>
 		<meta charset="utf-8">
 		<title>{{ page.title }} — {{ site.name }}</title>
@@ -13,6 +13,9 @@
 	</head>
 	<body>
 		{% include header.html %}
-		{{ content }}
+
+		<div class="wrapper">
+			{{ content }}
+		</div>
 	</body>
 </html>

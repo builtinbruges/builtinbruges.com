@@ -2,7 +2,7 @@
 <html lang="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}">
 	<head>
 		<meta charset="utf-8">
-		<title>{{ page.title }} - {{ site.name }}</title>
+		<title>{{ page.title }} — {{ site.name }}</title>
 		{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 		<meta name="author" content="{{ site.author.name }}">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +12,10 @@
 		{% include typekit.html %}
 	</head>
 	<body>
-		<div id="height-container">
-			{% include header.html %}
+		{% include header.html %}
 
-			<div class="wrapper text-wrapper"{% if page.lang %} lang="{{ page.lang }}"{% endif %}>
-				{{ content }}
-			</div>
-			<div id="push"></div>
+		<div class="wrapper markdown-content">
+			{{ content }}
 		</div>
-		{% include footer.html %}
 	</body>
 </html>

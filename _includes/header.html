@@ -1,18 +1,21 @@
 	<header>
 		<div class="wrapper">
 			<a href="/" title="{{ site.name }}"><h1>Built In <em>Bruges</em></h1></a>
+
+			{% if page.nav-disabled == nil or page.nav-disabled == false %}
 			<nav>
 				<ul>
-					{% sorted_for node in site.pages sort_by:nav-weight %}
-						{% if node.title != null and node.nav-group == "header" %}
-							{% if page.url == node.url %}
-								<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.nav-title}}</a></li>
-							{% else %}
-								<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.nav-title}}</a></li>
-							{% endif %}
+				{% sorted_for node in site.pages sort_by:nav-weight %}
+					{% if node.nav-title != null and node.nav-group == "header" %}
+					 	{% if page.url == node.url %}
+						<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.nav-title}}</a></li>
+						{% else %}
+						<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.nav-title}}</a></li>
 						{% endif %}
-					{% endsorted_for %}
+					{% endif %}
+				{% endsorted_for %}
 				</ul>
 			</nav>
+			{% endif %}
 		</div>
 	</header>
