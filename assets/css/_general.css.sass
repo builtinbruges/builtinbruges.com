@@ -1,4 +1,5 @@
 @import "compass"
+@import "assets/css/mixins.sass"
 
 html, body
   min-height: 100%
@@ -14,6 +15,14 @@ body
     weight: 500
   color: #989DB6
   line-height: 30px
+
+// Use image for background gradient in webkit browsers...
+// Banding is shown in webkit, it's ugly
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  body
+    +background-image-retina('../assets/img/bg-gradient', 'png', 50px, 500px)
+    background-repeat: repeat-x
+    background-position: top center
 
 a
   color: #fff
