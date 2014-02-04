@@ -1,6 +1,9 @@
 ---
 title: Tell, don't ask
+
 layout: post
+wrapper: true
+
 source_url: http://robots.thoughtbot.com/post/27572137956/tell-dont-ask
 ---
 Great (old) [post][thoughtbot-ask] by [Thoughtbot][thoughtbot]

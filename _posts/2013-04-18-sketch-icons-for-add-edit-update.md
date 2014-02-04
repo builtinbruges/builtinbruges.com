@@ -1,6 +1,8 @@
 ---
 title: Sketch icons
+
 layout: post
+wrapper: true
 ---
 I added a shot to [dribbble][dribbble-profile] containing [three sketch icons][dribbble-shot]: an add icon, edit icon and delete icon. Feel free to download the .sketch source file [attached to the shot][dribbble-shot] and re-use these graphics everyplace you'd like!
 

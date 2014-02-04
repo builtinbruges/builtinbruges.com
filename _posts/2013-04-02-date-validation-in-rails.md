@@ -1,6 +1,8 @@
 ---
 title: Date validation in Rails
+
 layout: post
+wrapper: true
 ---
 If you're using `:date` fields in your Rails models, you probably encoutered one ore more situations where you'd want to use some kind of date validation.
 

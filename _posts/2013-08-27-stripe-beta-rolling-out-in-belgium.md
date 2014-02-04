@@ -1,6 +1,8 @@
 ---
 title: Stripe beta starts rolling out in Belgium
+
 layout: post
+wrapper: true
 ---
 After another day of frustrations with [Ogone](http://www.ogone.be), one of Belgium's biggest online payment providers, I was thrilled to receive an invitation for the [Stripe Belgium beta](https://stripe.com/global#belgium). It's baffling to really see how big of a clusterfuck the api and web interface of Ogone is when you start to use the [Stripe](http://www.stripe.com) counterparts.
 

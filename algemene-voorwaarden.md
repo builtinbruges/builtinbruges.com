@@ -1,7 +1,8 @@
 ---
 title: Algemene Voorwaarden
-description: Algemene Factuur en Betalings Voorwaarden
-layout: markdown
+description: Algemene Factuur en Betalingsvoorwaarden
+layout: post
+wrapper: true
 
 nav-disabled: true
 ---

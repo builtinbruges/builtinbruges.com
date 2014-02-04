@@ -1,6 +1,9 @@
 ---
 title: Refactoring GitHub's Design
+
 layout: post
+wrapper: true
+
 source_url: http://ianstormtaylor.com/refactoring-githubs-design/
 ---
 [Cool piece][post-url] by [Ian Storm Taylor][ian-storm-taylor] explaining his view on the latest GitHub redesign
