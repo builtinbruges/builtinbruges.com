@@ -1,61 +1,54 @@
 ---
-title: Front-End Development / Web Design / Web Development
-description: Built In Bruges — Quality front-end development, web design & web development from the beautiful Bruges, Belgium
-layout: index
+title: Front-End Development, Web Design, Web Development
+description: Built In Bruges — Quality front-end development, web design &amp; web development from the beautiful Brugge, West-Vlaanderen, Belgium
+layout: default
+
+css-class: index
+wrapper: false
 
 nav-group: header
 nav-title: Home
 nav-weight: 1
 ---
+
 <div class="wrapper">
-	<section class="about">
-		<h1 class="logo">Built in Bruges</h1>
-		<hgroup>
-			<h2>A one man web + app studio</h2>
-			<h3>Based in the beautiful <strong>Bruges, Belgium</strong></h3>
-		</hgroup>
-	</section>
-	<ul class="services">
+	<h1 class="no-js">Built in Bruges</h1>
+	<h2>I deliver high quality <strong>front-end web development</strong> for businesses and startups.</h2>
+	<h3>I have experience with different web technologies such as HTML5, CSS3, JavaScript, jQuery, Sass, PHP, Ruby on Rails &amp; Jekyll</h3>
+
+	<div class="mini-me">
+		<a href="mailto:hello@builtinbrugs.com"><figure>Bert Devriese</figure></a>
+	</div>
+
+	<ul class="two-columns">
 		<li>
-			<h3>Front-End Development</h3>
-			<p>I deliver HTML5, CSS3 and javascript front-end work for other businesses and startups.</p>
-			<p>I like to focus on the details that make websites and web applications great!</p>
+			<h3>About me</h3>
+			<p>Hi, I’m <a href="">Bert Devriese</a>, a 28-year-old <strong>full stack developer</strong> who loves to sweat on the front-end details that make user interfaces for websites and web applications <strong>great</strong>.</p>
+			<p>I have been building websites since I was 12 years old and I currently have over 8 years of professional web-related experience.</p>
 		</li>
 		<li>
-			<h3>Design / Development</h3>
-			<p>I deliver designs and code web sites or applications and iOS applications for small businesses or startups.</p>
-		</li>
-		<li>
-			<a href="mailto:hello@builtinbruges.com">
-				<span class="icon-envelope"></span>
-				<h3>Contact Me</h3>
-			</a>
+			<p>Some of my most recent work includes coding the <strong>Trinch Webstudio CMS</strong>, designing and coding the <a href="http://www.trinch.com">trinch.com website</a>, a lot of <a href="http://www.trinch.com/nl/projecten/">other websites</a> and designing and coding an <a href="http://www.trinch.com/nl/case-studies/8/filliers">in-house iPad application for Filliers</a> which syncs with a server-side application.</p>
 		</li>
 	</ul>
 </div>
-<!--
-<nav>
-	<ul>
-	{% sorted_for node in site.pages sort_by:nav-weight %}
-		{% if node.nav-title != null and node.nav-group == "header" %}
-		 	{% if page.url == node.url %}
-			<li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.nav-title}}</a></li>
-			{% else %}
-			<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.nav-title}}</a></li>
-			{% endif %}
-		{% endif %}
-	{% endsorted_for %}
- </ul>
-</nav>
--->
-<footer>
+
+<div class="floormat">
 	<div class="wrapper">
-		&copy; <span>Bert Devriese //</span> Built in Bruges <span>// 2013</span>
-		<ul class="social">
-			<li><a href="http://www.dribbble.com/brtdv"><em class="icon-dribbble"></em></a></li>
-			<li><a href="http://www.github.com/brtdv"><em class="icon-github"></em></a></li>
-			<li><a href="http://www.twitter.com/brtdv"><em class="icon-twitter"></em></a></li>
-			<li><a href="http://www.facebook.com/builtinbruges"><em class="icon-facebook"></em></a></li>
+		<ul class="two-columns">
+			<li>
+				<h3>Interested in working together?</h3>
+				<p>Don't hesitate to contact me by sending me an e-mail, or via one of my social media profiles on Github, Twitter or Dribbble!</p>
+			</li>
+			<li>
+				<ul class="contact-options">
+					<li><a href="mailto:hello@builtinbruges.com">Email me<em class="icon-envelope"></em></a></li>
+					<li><a href="http://www.twitter.com/brtdv">Send me a tweet<em class="icon-twitter"></em></a></li>
+					<li><a href="http://www.dribbble.com/brtdv">Dribbble<em class="icon-dribbble"></em></a></li>
+					<li><a href="http://www.github.com/brtdv">Github<em class="icon-github"></em></a></li>
+				</ul>
+			</li>
 		</ul>
 	</div>
-</footer>
+</div>
+
+{% include footer.html %}

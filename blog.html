@@ -7,16 +7,3 @@ nav-group: header
 nav-title: Blog
 nav-weight: 2
 ---
-<section class="posts">
-{% for post in site.posts limit:5 %}
-    {% include show_post.html %}
-{% endfor %}
-</section>
-
-<div class="wrapper">
-	<nav id="pagination">
-		Want to read more? <a href="/archive.html" title="Previous Page">Check out the archive</a>
-	</nav>
-</div>
-
-{% include floormat.html %}
