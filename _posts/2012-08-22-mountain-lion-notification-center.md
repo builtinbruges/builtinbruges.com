@@ -3,6 +3,8 @@ title: Mountain Lion Notification Center
 
 layout: post
 wrapper: true
+
+source_url: https://twitter.com/adambetts/statuses/238719670620925952
 ---
 [Cool find](https://twitter.com/adambetts/statuses/238719670620925952) of [Adam Betts](//twitter.com/adambetts "@adambetts") on twitter:
 

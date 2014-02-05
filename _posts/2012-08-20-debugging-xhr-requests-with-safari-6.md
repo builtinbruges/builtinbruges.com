@@ -11,3 +11,7 @@ Annoys me endlessly when I'm debugging and I find myself switching to Chrome, wh
 However, the webkit nightlies also feature the new debug window so I guess it's only a matter of time before Chrome also gets this new window.
 
 I hope this gets fixed rather sooner than later. Anyone know a solution or other workaround for this problem? Contact me on [twitter](http://www.twitter.com/brtdv "@brtdv")!
+
+#### Update 2014-02-05
+
+This has been fixed in Safari 7 on OS X Mavericks. You'll now be able to see the POST parameters in XHR requests again! Great!
