@@ -3,7 +3,6 @@
 // Don't use analytics in development
 if (document.location.hostname != '' && document.location.hostname.indexOf("localhost") == -1)
 {
-	alert('Analytics');
 	var _gaq = _gaq || [];
 	_gaq.push(['_setAccount', '{{ site.analytics.tracker_id }}']);
 	_gaq.push(['_setDomainName', '{{ site.analytics.tracker_domain }}']);
