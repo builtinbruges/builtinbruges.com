@@ -1,59 +1,79 @@
 @import "compass"
 @import "assets/css/mixins.sass"
 
+// ----------------------------------------------------------------------------
+// General Body Stuff
+
 html, body
   min-height: 100%
 
 body
-  background-color: #1E2127
-  +background-image(linear-gradient(#282C33, #1E2127))
+  background-color: #fff
+  +background-image(linear-gradient(#F7FAFC, #fff))
   background-size: 100% 500px
   background-repeat: no-repeat
   font:
-    family: "jaf-facitweb", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif
+    family: "museo-sans", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif
     size: 16px
     weight: 500
-  color: #989DB6
+  color: #565C72
   line-height: 30px
-
-// Use image for background gradient in webkit browsers...
-// Banding is shown in webkit, it's ugly
-@media screen and (-webkit-min-device-pixel-ratio:0)
-  body
-    +background-image-retina('../assets/img/bg-gradient', 'png', 50px, 500px)
-    background-repeat: repeat-x
-    background-position: top center
-
-a
-  color: #fff
-  text-decoration: none
-  +experimental('transition', all 250ms cubic-bezier(.18, .85, .47, 1.01))
-
-a:visited
-  color: #D4D8E9
-
-a:hover
-  color: #F7CF8B
-
-p
-  a
-    border-bottom: 2px solid #2F343D
-
-  a:hover
-    border-bottom: 2px solid rgba(166,172,195,.3)
-
-  &:after
 
 .wrapper
   width: 960px
   margin: 0 auto
+  +experimental('transition', padding 250ms)
+
+
+@media screen and (max-width: 1100px)
+  .wrapper
+    width: auto
+    padding: 0 60px
+
+@media screen and (max-width: 600px)
+  .wrapper
+    width: auto
+    padding: 0 20px
+
+
+
+// ----------------------------------------------------------------------------
+// General Text & Link Colors
+a
+  color: #36373d
+  text-decoration: none
+  +experimental('transition', all 250ms cubic-bezier(.18, .85, .47, 1.01))
+
+a:visited
+  color: #505158
+
+a:hover
+  color: #2A93DD
+
+p
+  a
+    border-bottom: 2px solid #D6E1E8
+
+  a:hover
+    border-bottom: 2px solid #2A93DD
+    border-bottom: 2px solid rgba(42,147,221,.3)
 
 em
   font-style: italic
 
 strong
-  color: #fff
+  color: #36373D
 
+// ----------------------------------------------------------------------------
+// Header
+header
+  position: fixed
+  padding: 30px
+  font-weight: 200
+  font-size: 20px
+
+// ----------------------------------------------------------------------------
+// Footer
 footer
   text-align: center
   font-size: 14px
