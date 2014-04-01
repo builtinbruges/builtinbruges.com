@@ -8,7 +8,7 @@ wrapper: true
 
 [Gitbox][gitbox] is, in my opinion, the simplest and most elegant Git GUI app out there. The app looks great and has the right amount of functionality. It provides functionality for all basic git stuff like commiting, merging, pushing and pulling and even cherry-picking and rebasing, without the need for me to go dive in the command-line to execute git commands for which I don't remember the exact syntax anymore. The app is only $14.99 on the App store, so for a tool I use everyday that's a pretty good price as well.
 
-However, lately the app hasn't seen much love from its [developer][oleganza]. It has now been about 160 days since the last update, and the developer seems to be keeping himself with collecting bitcoins lately. There has been no love for Gitbox lately.
+However, lately the app hasn't seen much love from its [developer][oleganza]. It has now been about 160 days since the last update, and the developer seems to be keeping busy collecting bitcoins lately. There really hasn't been any love for Gitbox at all in the last 6 months.
 
 If the app was running bug free, without problems, I wouldn't see an issue with that. But as you can guess, there *are* issues with Gitbox. Especially on OS X 10.9 Mavericks.
 
