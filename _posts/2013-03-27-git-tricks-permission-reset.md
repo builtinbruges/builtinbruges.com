@@ -1,5 +1,6 @@
 ---
 title: Git tip&#58; resetting file permissions
+description: This blog post explains how to reset git file permissions of files you've modified without losing your changes.
 
 layout: post_md
 wrapper: true
