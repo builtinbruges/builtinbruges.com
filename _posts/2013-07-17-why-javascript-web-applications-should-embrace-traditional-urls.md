@@ -6,7 +6,7 @@ wrapper: true
 
 source_url: http://9elements.com/io/index.php/hybrid-javascript-apps/
 ---
-[A good case](post-url) for the use of normal URL's and the HTML5 History API in javascript Web Applications, particularly in the Backbone.js framework.
+[A good case][post-url] for the use of normal URL's and the HTML5 History API in javascript Web Applications, particularly in the Backbone.js framework.
 
 While we don't use the Backbone.js framework, we *have* faced the same dilemma a while ago. We also ditched the hash/hash bang URL's in favor of the way nicer HTML5 History API.
 
