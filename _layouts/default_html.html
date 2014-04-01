@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{% if page.lang %}{{ page.lang }}{% else %}en{% endif %}"{% if page.css-class %} class="{{ page.css-class }}"{% endif %}>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }} — {{ site.name }}</title>
+		{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+		<meta name="author" content="{{ site.author.name }}">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		{% include css.html %}
+		{% include js.html %}
+		{% include analytics.html %}
+		{% include typekit.html %}
+	</head>
+	<body>
+		{% if page.wrapper == true %}<div class="wrapper">{% endif %}
+			{{ content }}
+		{% if page.wrapper == true %}</div>{% endif %}
+	</body>
+</html>

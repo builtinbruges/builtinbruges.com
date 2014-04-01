@@ -1,7 +1,7 @@
 ---
 title: Git tip&#58; resetting file permissions
 
-layout: post
+layout: post_md
 wrapper: true
 ---
 I'd like to share a little trick I have been using a lot the last few months.

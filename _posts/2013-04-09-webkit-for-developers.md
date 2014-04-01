@@ -2,7 +2,7 @@
 title: Webkit for developers
 date: 2013-04-09 22:00:00 +02:00
 
-layout: post
+layout: post_md
 wrapper: true
 
 source_url: http://paulirish.com/2013/webkit-for-developers/

@@ -1,7 +1,7 @@
 ---
 title: CSSCSS redundancy analyzer
 
-layout: post
+layout: post_md
 wrapper: true
 
 source_url: http://zmoazeni.github.io/csscss/

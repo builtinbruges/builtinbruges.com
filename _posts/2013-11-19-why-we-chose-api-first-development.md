@@ -1,7 +1,7 @@
 ---
 title: "Why we chose API first development"
 
-layout: post
+layout: post_md
 wrapper: true
 
 source_url: http://blog.pop.co/post/67465239611/why-we-chose-api-first-development

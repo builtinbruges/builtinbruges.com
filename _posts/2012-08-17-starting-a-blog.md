@@ -2,7 +2,7 @@
 title: I'm starting a blog!
 description: This post describes how you can easily delete a file that's in use on OS X using a few simpel terminal commands
 
-layout: post
+layout: post_md
 wrapper: true
 ---
 As of today, I have [100 dribbble followers](http://dribbble.com/brtdv). No big deal, I know, but it gave me a boost to try to write stuff on a 'blog'.

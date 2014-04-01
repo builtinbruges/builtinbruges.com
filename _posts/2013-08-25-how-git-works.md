@@ -1,7 +1,7 @@
 ---
 title: How git works
 
-layout: post
+layout: post_md
 wrapper: true
 
 source_url: http://slidetocode.com/2013/08/25/how-git-works/

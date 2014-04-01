@@ -1,7 +1,7 @@
 ---
 title: Refactoring GitHub's Design
 
-layout: post
+layout: post_md
 wrapper: true
 
 source_url: http://ianstormtaylor.com/refactoring-githubs-design/

@@ -1,7 +1,7 @@
 ---
 title: Quartz Composer Diary
 
-layout: post
+layout: post_md
 wrapper: true
 
 source_url: http://qc.prabros.com/primer2.html
