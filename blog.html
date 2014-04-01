@@ -4,19 +4,27 @@ description: An overview of the recent blog posts
 layout: default_html
 
 css-class: blog
-wrapper: true
+wrapper: false
 
 nav-group: header
 nav-title: Blog
 nav-weight: 2
 ---
 
-<section class="posts">
-	<ul>
-	{% for post in site.posts %}
-		<li>
-			<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-		</li>
-	{% endfor %}
-	</ul>
-</section>
+{% include header.html %}
+<div class="wrapper">
+	<div class="markdown">
+		<section class="posts">
+			<p>&nbsp;</p>
+			<ul>
+			{% for post in site.posts %}
+				<li>
+					<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+				</li>
+			{% endfor %}
+			</ul>
+		</section>
+	</div>
+</div>
+{% include footer.html %}
+
