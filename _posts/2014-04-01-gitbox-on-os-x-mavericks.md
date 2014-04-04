@@ -29,7 +29,7 @@ So just run the following commands in the Terminal and Gitbox should start norma
 
 ## Disabling app nap
 
-After you've removed all prefs and Gitbox is launching properly again, you'll still have a fairly big chance that this issue might occur again, and Gitbox might lock up or mess up your preferences *again*, which may cause you running into the same problem over and over and having to delete your preferences everytime. This has happened a few times to me as well.
+After you've removed all prefs and Gitbox is launching properly again, you'll still have a fairly big chance that this issue might occur again, and Gitbox might lock up or mess up your preferences *again*, which may cause you running into the same problem over and over and having to delete your preferences everytime. This has happened to me a few times as well.
 
 I tried a few things, but one thing that really seemed to work for me that prevented this from happening again, was disabling [app nap][app-nap] for Gitbox. App nap is a new Mavericks technology which suspends applications of whom their windows are not visible. I believe that this seems to be related to the fact that Gitbox sometimes screws up its own preferences file, which causes it to not launch anymore.
 
@@ -41,7 +41,7 @@ After disabling app nap, I have never experienced the issue where the main windo
 
 ## An update, soon?
 
-These two commands made sure I never have to truncate my preference file and add all my repos again, but this does not mean there are still a few weird bugs left in Gitbox.
+These two commands made sure I never have to truncate my preference file and add all my repos again, but this does not mean there are no weird bugs left in Gitbox.
 
 Let's hope the [developer][oleganza] breaks the radio silence surrounding Gitbox and releases an update with a whole lot of bugfixes [anytime now][twitter-mavericks-soon].
 
