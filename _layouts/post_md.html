@@ -25,7 +25,7 @@
 		{% if page.wrapper == true %}<div class="wrapper">{% endif %}
 			<div class="markdown">
 				<hgroup class="post-title">
-					<h1>{{ page.title }}</h1>
+					<h1>{% if post.source_url == nil %}<em class="para">&para;</em> {% endif %}{{ page.title }}</h1>
 					<time datetime="{{ page.date }}">{{ page.date | date: "%B %Y" }}</time>
 				</hgroup>
 				{{ content | markdownify }}

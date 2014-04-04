@@ -15,11 +15,11 @@ nav-weight: 2
 <div class="wrapper">
 	<div class="markdown">
 		<section class="posts">
-			<p>&nbsp;</p>
 			<ul>
 			{% for post in site.posts %}
 				<li>
-					<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+					<h3>{% if post.source_url == nil %}<em class="para">&para;</em> {% endif %}<a href="{{ post.url }}"{% if post.description != nil %} title="{{ post.description | escape }}"{% endif %}>{{ post.title }}</a></h3>
+					<time datetime="{{ post.date }}">{{ post.date | date: "%B %Y" }}</time>
 				</li>
 			{% endfor %}
 			</ul>
