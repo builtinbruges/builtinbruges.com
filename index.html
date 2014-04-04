@@ -25,9 +25,31 @@ nav-weight: 1
 			<h3>About me</h3>
 			<p>Hi, I’m <a href="">Bert Devriese</a>, a 28-year-old <strong>full stack developer</strong> who loves to sweat on the front-end details that make user interfaces for websites and web applications <strong>great</strong>.</p>
 			<p>I have been building websites since I was 12 years old and I currently have over 8 years of professional web-related experience.</p>
+			<p>Some of my most recent work includes coding the <strong>Trinch Webstudio CMS</strong>, designing and coding the <a href="http://www.trinch.com">trinch.com website</a>, a lot of front- &amp; back-end work on <a href="http://www.trinch.com/nl/projecten/">other websites</a> and designing and coding an <a href="http://www.trinch.com/nl/case-studies/8/filliers">in-house iPad application for Filliers</a> which syncs with a server-side application.</p>
 		</li>
 		<li>
-			<p>Some of my most recent work includes coding the <strong>Trinch Webstudio CMS</strong>, designing and coding the <a href="http://www.trinch.com">trinch.com website</a>, a lot of front- &amp; back-end work on <a href="http://www.trinch.com/nl/projecten/">other websites</a> and designing and coding an <a href="http://www.trinch.com/nl/case-studies/8/filliers">in-house iPad application for Filliers</a> which syncs with a server-side application.</p>
+			<h3>Blog</h3>
+			<p>Occasionally, I write down my thoughts on different web technologies and apps.</p>
+			<section class="posts">
+				<ul>
+				{% assign counter = '' %}
+				{% for post in site.posts %}
+					{% capture difference %}{{ counter | size | minus:4 }}{% endcapture %}
+					{% unless difference contains '-' %}
+					{% else %}
+						{% if post.source_url == nil %}
+							{% capture counter %}{{ counter | append:'.' }}{% endcapture %}
+							<li>
+								<h5><em class="para">&para;</em> <a href="{{ post.url }}"{% if post.description != nil %} title="{{ post.description | escape }}"{% endif %}>{{ post.title }}</a></h5>
+								<time datetime="{{ post.date }}">{{ post.date | date: "%B %Y" }}</time>
+							</li>
+						{% endif %}
+					{% endunless %}
+				{% endfor %}
+				</ul>
+			</section>
+			<p><a href="blog.html" title="Built in Bruges Blog">Check out out my other blog posts</a></p>
+
 		</li>
 	</ul>
 </div>
