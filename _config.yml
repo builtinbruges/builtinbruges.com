@@ -3,7 +3,7 @@ post_dirs: true
 url: http://www.builtinbruges.com
 
 markdown: redcarpet
-pygments: true
+highlighter: true
 
 timezone: Europe/Brussels
 encoding: UTF-8

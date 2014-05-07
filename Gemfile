@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 1.3'
+gem 'jekyll', '~> 2.0'
 gem 'jekyll-asset-pipeline', '~> 0.1.0'
 
 gem 'sass'
