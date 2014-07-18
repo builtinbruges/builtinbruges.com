@@ -32,7 +32,7 @@
 		setTimeout(function ()
 		{
 			// Send event to GA => if visitor stays on article for 15 secs, article has been read
-			_gaq.push(['_trackEvent', '15_seconds', 'read']);
+			ga('send', 'event', '15_seconds', 'read');
 		}, 15000);
 
 		</script>
