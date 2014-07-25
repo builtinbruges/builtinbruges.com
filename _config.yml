@@ -2,13 +2,13 @@ permalink: /:year/:month/:title
 post_dirs: true
 url: http://www.builtinbruges.com
 
-markdown: redcarpet
+markdown: kramdown
 highlighter: true
 
 timezone: Europe/Brussels
 encoding: UTF-8
 
-name: Built In Bruges
+title: Built In Bruges
 author:
   name: Bert Devriese
   email: bert@builtinbruges.com
@@ -20,8 +20,7 @@ typekit:
   kit_id: kxh3qqe
 
 sass:
-  syntax: sass
-  style: compressed
+  style: :compressed
 
 analytics:
   tracker_id: UA-40297203-1

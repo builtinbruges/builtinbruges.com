@@ -1,0 +1,182 @@
+---
+---
+// ----------------------------------------------------------------------------
+// Home Page Special
+body
+  font:
+    family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif
+    size: 16px
+  line-height: 30px
+  background-color: white
+  color: #555
+  -webkit-text-size-adjust: 100%
+
+hr
+  border: none
+  border-bottom: 1px solid #eee
+  margin: 0
+  padding: 0
+
+a
+  color: #FF3B30
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+// ----------------------------------------------------------------------------
+// Home Page Special
+body.home
+  header
+    background:
+      image: linear-gradient(-180deg, rgba(51,51,51,.5) 10%, rgba(51,51,51,0.00) 30%), linear-gradient(0deg, rgba(48,48,48,0.9), rgba(48,48,48,0.9)), url(../img/brugge.jpg)
+      position: 50% 50%
+      size: cover
+      repeat: no-repeat
+
+  .content
+    padding: 30px 30px
+
+  @media (max-width: 640px)
+    .three-cols
+      padding: 20px 0
+
+      .content
+        padding: 10px 20px
+
+
+// ----------------------------------------------------------------------------
+// Header
+header
+  background: #25201C
+  font-size: 20px
+  color: #FFFFFF
+  padding: 15px
+
+  hgroup
+    line-height: 25px
+    margin: 0 0 15px
+
+  h1
+    display: none
+
+  &:before
+    display: block
+    content: 'B'
+    font-weight: 600
+
+  .logo-container
+    max-width: 420px
+    max-height: 420px
+    margin: 0 auto 20px
+
+  .logo
+    display: block
+    text-indent: -9999px
+    background:
+      image: url(../img/logo-home.png)
+      repeat: no-repeat
+      position: 50% 50%
+      size: contain
+    height: 0
+    padding-bottom: 100%
+
+  h2,
+  h3
+    text-align: center
+
+  h2
+    font-size: 24px
+    font-weight: 500
+    margin: 0 0 20px
+
+  h3
+    font-size: 16px
+    margin: 0 0 20px
+
+@media (-webkit-min-device-pixel-ratio: 2)
+  header h2 .logo
+    background-image: url(../img/logo-home@2x.png)
+
+// ----------------------------------------------------------------------------
+// Header
+footer
+  overflow: hidden
+  font-size: 14px
+  color: #ccc
+  background: #25201C
+  padding: 10px 20px
+
+  @media (max-width: 640px)
+    text-align: center
+
+    span:first-child
+      display: none
+
+  @media (min-width: 640px)
+    span:first-child
+      float: left
+      color: #fff
+      text-transform: uppercase
+      font-weight: 100
+      letter-spacing: 1px
+
+    span:last-child
+      float: right
+
+
+// ----------------------------------------------------------------------------
+// Wrapper
+.wrapper
+  max-width: 960px
+  margin: 0 auto
+
+
+// ----------------------------------------------------------------------------
+// Three column layout
+@media (min-width: 640px)
+  .three-cols
+    overflow: hidden
+
+    &.with-border
+      > div:not(:last-child)
+        border-right: 1px solid #eee
+
+    > div
+      float: left
+      width: 33.33%
+      box-sizing: border-box
+
+
+// ----------------------------------------------------------------------------
+// Contact Information
+.contact-information
+  margin: 0 auto
+
+  tbody
+    th,td
+      padding: 0 5px
+    th
+      font-weight: 600
+      text-align: right
+
+
+// ----------------------------------------------------------------------------
+// Default Textual Styles
+.content
+  h3
+    font:
+      size: 24px
+      weight: 700
+    color: #FF3B30
+    margin: 0 0 10px
+
+    span
+      font-size: 22px
+
+  p
+    color: #555
+
+.content > a
+  display: block
+  text-decoration: none
