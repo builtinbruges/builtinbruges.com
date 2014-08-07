@@ -5,11 +5,14 @@
 body
   font:
     family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif
-    size: 16px
+    size: 18px
   line-height: 30px
   background-color: white
   color: #555
   -webkit-text-size-adjust: 100%
+
+strong
+  font-weight: 600
 
 hr
   border: none
@@ -25,50 +28,57 @@ a
     text-decoration: underline
 
 // ----------------------------------------------------------------------------
-// Home Page Special
-body.home
-  header
-    background:
-      image: linear-gradient(-180deg, rgba(51,51,51,.5) 10%, rgba(51,51,51,0.00) 30%), linear-gradient(0deg, rgba(48,48,48,0.9), rgba(48,48,48,0.9)), url(../img/brugge.jpg)
-      position: 50% 50%
-      size: cover
-      repeat: no-repeat
+// Call To Action Button
 
-  .content
-    padding: 30px 30px
+.cta-button
+  color: #fff
+  background-color: #FF3B30
+  border-radius: 3px
+  text-decoration: none
+  font-weight: 600
+  font-size: 24px
+  padding: 10px 20px
+  transition: background 150ms cubic-bezier(.05,.48,.48,.95)
 
-  @media (max-width: 640px)
-    .three-cols
-      padding: 20px 0
+  &:hover
+    text-decoration: none
+    background-color: #D32D24
 
-      .content
-        padding: 10px 20px
+input[type=button].cta-button,
+input[type=submit].cta-button
+  border: none
+  cursor: pointer
+  font-size: 16px
+  margin: 0
+  -webkit-appearance: none
 
 
 // ----------------------------------------------------------------------------
 // Header
 header
-  background: #25201C
   font-size: 20px
-  color: #FFFFFF
-  padding: 15px
+  padding: 15px 0
+
+  .wrapper
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    padding: 0 20px
 
   hgroup
+    float: left
+    text-transform: uppercase
     line-height: 25px
-    margin: 0 0 15px
+    font-weight: 200
+    letter-spacing: 1px
+    margin: -1px 0 15px
 
-  h1
-    display: none
-
-  &:before
-    display: block
-    content: 'B'
-    font-weight: 600
+    a:hover
+      text-decoration: none
 
   .logo-container
     max-width: 420px
     max-height: 420px
-    margin: 0 auto 20px
+    margin: 60px auto 30px
 
   .logo
     display: block
@@ -81,22 +91,71 @@ header
     height: 0
     padding-bottom: 100%
 
-  h2,
-  h3
-    text-align: center
-
   h2
-    font-size: 24px
-    font-weight: 500
-    margin: 0 0 20px
+    text-align: center
+    font-size: 26px
+    font-weight: 600
+    line-height: 1.3em
+    margin: 0 0 30px
 
-  h3
-    font-size: 16px
-    margin: 0 0 20px
+
+  // --------------------------------------------------------------------------
+  // Navigation
+  nav
+    line-height: 25px
+    margin: 25px 0 0 240px
+
+    ul
+      padding: 0 0 5px
+      border-bottom: 2px solid #999
+
+    li
+      display: inline-block
+      margin: 0 15px 0 0
+
+      &:last-child
+        float: right
+        margin: 0
+
+    a
+      display: block
+      color: #777
+      font-weight: 600
+      transition: all 75ms cubic-bezier(.05,.48,.48,.95)
+
+      &:hover
+        text-decoration: none
+        color: #222
+
+    @media (max-width: 720px)
+      margin: 25px 0 0 220px
+
+      ul li,
+      ul li:last-child
+        display: block
+        float: none
+        text-align: left
 
 @media (-webkit-min-device-pixel-ratio: 2)
   header h2 .logo
     background-image: url(../img/logo-home@2x.png)
+
+
+// ----------------------------------------------------------------------------
+// Header
+aside
+  .contact-information
+    margin: 0 0 30px
+
+  #gmap
+    height: 200px
+    background: #ccc
+    border-radius: 3px
+
+  #gmap,
+  address
+    margin: 0 0 20px
+
 
 // ----------------------------------------------------------------------------
 // Header
@@ -107,13 +166,13 @@ footer
   background: #25201C
   padding: 10px 20px
 
-  @media (max-width: 640px)
+  @media (max-width: 720px)
     text-align: center
 
     span:first-child
       display: none
 
-  @media (min-width: 640px)
+  @media (min-width: 720px)
     span:first-child
       float: left
       color: #fff
@@ -128,23 +187,70 @@ footer
 // ----------------------------------------------------------------------------
 // Wrapper
 .wrapper
-  max-width: 960px
+  max-width: 1200px
   margin: 0 auto
 
 
 // ----------------------------------------------------------------------------
 // Three column layout
-@media (min-width: 640px)
-  .three-cols
+.three-cols
+  .col:not(.col-linked),
+  .col-linked > a
+    display: block
+    padding: 30px 25px
+
+  .col-linked > a:hover
+    background: #f9f9f9
+    text-decoration: none
+
+  @media (min-width: 720px)
     overflow: hidden
 
     &.with-border
-      > div:not(:last-child)
+      > .col:not(:last-child)
         border-right: 1px solid #eee
 
-    > div
+    > .col
       float: left
       width: 33.33%
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+
+
+// ----------------------------------------------------------------------------
+// Two column layout
+.two-cols
+  .col:not(.col-linked),
+  .col-linked > a
+    display: block
+    padding: 30px 25px
+
+  &.no-container
+    .col:not(.col-linked),
+    .col-linked > a
+      padding: 30px 0
+
+  .col-linked > a:hover
+    background: #f9f9f9
+    text-decoration: none
+
+  @media (min-width: 720px)
+    overflow: hidden
+
+    &.with-border
+      > .col:not(:last-child)
+        border-right: 1px solid #eee
+
+    &.two-nav-cols
+      > .col:first-child
+        width: 70%
+      > .col:last-child
+        width: 30%
+
+    > .col
+      float: left
+      width: 50%
+      -moz-box-sizing: border-box
       box-sizing: border-box
 
 
@@ -162,8 +268,121 @@ footer
 
 
 // ----------------------------------------------------------------------------
+// Work / Portfolio
+.portfolio
+  margin: 45px 0
+
+  > li
+    clear: both
+    overflow: hidden
+    margin: 0 0 40px
+
+  .description,
+  .pictures
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+  h3
+    border-bottom: 1px solid #eee
+    padding: 0 0 10px
+
+  .icons
+    float: right
+
+  .icon
+    display: inline-block
+    width: 24px
+    height: 24px
+    line-height: 26px
+    background: #FF3B30
+    text-align: center
+    color: #fff
+    border-radius: 30px
+
+    &:hover
+      text-decoration: none
+      background-color: #D32D24
+
+    > span
+      position: relative
+      top: -3px
+      font-size: 14px
+
+  @media (min-width: 960px)
+    > li:nth-child(odd)
+      .description
+        float: left
+        padding-right: 15px
+      .pictures
+        float: right
+
+    > li:nth-child(even)
+      .description
+        padding-left: 20px
+        float: right
+      .pictures
+        float: left
+
+    .description
+      width: 35%
+
+    .pictures
+      width: 65%
+
+  .description
+    margin: 0 0 20px
+
+    p
+      font-size: 16px
+      line-height: 30px
+
+  .pictures
+    overflow: hidden
+
+    a
+      display: block
+      width: 100%
+      height: 100%
+      transition: background 125ms cubic-bezier(.05,.48,.48,.95)
+
+      &:hover
+        background: rgba(255,59,48,.6)
+
+    li
+      float: left
+      width: 50%
+      background:
+        repeat: no-repeat
+        position: 50% 50%
+        size: cover
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+
+      &:nth-child(1)
+        height: 350px
+        border-right: 2px solid #fff
+
+      &:nth-child(2),
+      &:nth-child(3)
+        height: 175px
+
+      &:nth-child(2)
+        border-bottom: 2px solid #fff
+
+
+// ----------------------------------------------------------------------------
 // Default Textual Styles
 .content
+  &.container
+    padding: 30px 25px
+
+  h1
+    font:
+      size: 28px
+      weight: 700
+    color: #FF3B30
+    margin: 0 0 20px
+
   h3
     font:
       size: 24px
@@ -174,9 +393,156 @@ footer
     span
       font-size: 22px
 
-  p
+  p, ul
+    margin: 0 0 20px
+
+  p, li
     color: #555
 
-.content > a
-  display: block
-  text-decoration: none
+  *:last-child
+    margin-bottom: 0
+
+// --------------------------------------------------------------------------
+// Contact Form
+.contact-form
+  margin: 45px 0
+
+  .field
+    clear: left
+
+  label
+    display: block
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    padding: 0 15px 0 0
+
+  input[type=text],
+  textarea
+    display: block
+    width: 100%
+    font-family: 'Helvetica Neue', Helvetica, Verdana, sans-serif
+    font-size: 16px
+    line-height: 20px
+    border-radius: 2px
+    background: #F9F9F9
+    border: 1px solid #DDDDDD
+    padding: 5px
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    margin: 0 0 15px
+
+  textarea
+    min-height: 150px
+    max-height: 650px
+    resize: vertical
+
+  @media (max-width: 720px)
+    .field.button label
+      display: none
+
+  @media (min-width: 720px)
+    label
+      float: left
+      text-align: right
+      width: 25%
+
+    input[type=text],
+    textarea
+      float: left
+      width: 75%
+
+// ----------------------------------------------------------------------------
+// Special pages with backgrounds in navigation
+body.home,
+body.about-me
+  header
+    background: #25201C
+    color: #FFFFFF
+
+  nav
+    ul
+      border-bottom: 2px solid #fff
+
+    a
+      color: #f1f1f1
+
+    a:hover
+      color: #fff
+
+// ----------------------------------------------------------------------------
+// Home Page Special
+body.home
+  header
+    position: relative
+    overflow: hidden
+    background:
+      image: linear-gradient(-180deg, rgba(51,51,51,.5) 10%, rgba(51,51,51,0.00) 30%), linear-gradient(0deg, rgba(48,48,48,0.85), rgba(48,48,48,0.85)), url(../img/brugge.jpg)
+      position: 50% 50%
+      size: cover
+      repeat: no-repeat
+    min-height: 600px
+
+    .atoms-big
+      position: absolute
+      left: 50%
+      top: 240px
+      width: 900px
+      height: 900px
+      background: url(../img/atoms-big.png) no-repeat 50% 50%
+      margin: 0 0 0 -450px
+      -webkit-animation-name: rotate
+      -webkit-animation-duration: 120s
+      -webkit-animation-iteration-count: infinite
+      -webkit-animation-timing-function: linear
+      animation-name: rotate
+      animation-duration: 120s
+      animation-iteration-count: infinite
+      animation-timing-function: linear
+
+    .atoms-small
+      position: absolute
+      left: 50%
+      top: 450px
+      width: 500px
+      height: 500px
+      background: url(../img/atoms-small.png) no-repeat 50% 50%
+      margin: 0 0 0 -250px
+      -webkit-animation-name: rotate
+      -webkit-animation-duration: 35s
+      -webkit-animation-iteration-count: infinite
+      -webkit-animation-timing-function: linear
+      animation-name: rotate
+      animation-duration: 35s
+      animation-iteration-count: infinite
+      animation-timing-function: linear
+
+  .content.container .cta-button
+    float: right
+    margin: 45px 0 0 20px
+
+@-webkit-keyframes rotate
+  0%
+    -webkit-transform: rotate(0deg)
+  100%
+    -webkit-transform: rotate(360deg)
+
+@keyframes rotate
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
+
+// ----------------------------------------------------------------------------
+// About Me
+body.about-me
+  header
+    background:
+      image: linear-gradient(-180deg, rgba(51,51,51,.3) 10%, rgba(51,51,51,0.00) 30%), url(../img/about-me.jpg)
+      position: 50% 70%
+      size: cover
+      repeat: no-repeat
+    min-height: 650px
+
+  @media (max-width: 720px)
+    header
+      background-position: 80% 70%

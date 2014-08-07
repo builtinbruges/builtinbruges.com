@@ -7,164 +7,60 @@ body_class: home
 ---
 
 <header>
-	<hgroup>
-		<h1>Built in Bruges</h1>
-	</hgroup>
-
+	{% include header.html %}
+	<div class="atoms-big"></div>
+	<div class="atoms-small"></div>
 	<div class="wrapper">
 		<div class="logo-container"><strong class="logo"></strong></div>
-
 		<h2>I deliver high quality web/app design &amp; development for businesses and startups</h2>
-		<h3>
-			<span>I have experience with different web technologies such as HTML5, CSS3, JavaScript, </span>
-			<span>jQuery, HAML, Sass, PHP, Ruby on Rails, Jekyll, Bower, Grunt and Yeoman</span>
-		</h3>
 	</div>
 </header>
 
 <div class="wrapper">
+	<div class="content container">
+		<a href="/hire-me/" class="cta-button">Hire Me</a>
+		<h3>What I do</h3>
+		<p>I help you think about your projects and have the ability to work on <strong>custom applications</strong> that <strong>work for you and your users</strong>. I can handle a full project, from front- to backend, fully tailored to your needs, completely <span title="Hence, Built in Bruges ;-)">in-house</span>.</p>
+		<p>I have experience with different web technologies such as HTML5, CSS3, JavaScript, jQuery, HAML, Sass, PHP, Ruby on Rails, Jekyll, Bower, Grunt and Yeoman. Check out <a href="/work/">my work</a> to get an idea of some of the projects I have completed the last few years.</p>
+	</div>
+	<hr />
 	<section class="three-cols with-border">
-		<div class="content">
-			<a href="#">
+		<div class="col col-linked content">
+			<a href="/about-me/">
 				<h3>About Me</h3>
 				<p>Learn more about myself and my web related experience</p>
 			</a>
 		</div>
-		<div class="content">
-			<a href="#">
+		<div class="col col-linked content">
+			<a href="/work/">
 				<h3>My Work</h3>
-				<p>Learn more about myself and my web related experience</p>
+				<p>Learn more about my work and latest projects</p>
 			</a>
 		</div>
-		<div class="content">
-			<a href="#">
+		<div class="col col-linked content">
+			<a href="/blog/">
 				<h3>Blog</h3>
-				<p>Read up on some of my thoughts about web related tech/trends</p>
+				<p>Sometimes I write down my thoughts about tech trends/apps</p>
 			</a>
 		</div>
 	</section>
 	<hr />
 	<section class="three-cols with-border">
-		<div class="content">
-			<h3><span class="ss-spraybottle"></span> Design</h3>
-			<ul>
-				<li>Web Design</li>
-				<li>Responsive Design</li>
-				<li>Mobile Websites</li>
-				<li>Mobile Applications</li>
-				<li>HTML Emails</li>
-			</ul>
+		<div class="col col-linked content">
+			<a href="/about-me/">
+				{% include services-frontend.html %}
+			</a>
 		</div>
-		<div class="content">
-			<h3><span class="ss-testtube"></span> Development</h3>
-			<ul>
-				<li>CMS Driven Websites</li>
-				<li>CMS Driven Webshops</li>
-				<li>PHP &amp; MySQL</li>
-				<li>Ruby on Rails</li>
-				<li>jQuery &amp; Javascript</li>
-			</ul>
+		<div class="col col-linked content">
+			<a href="/about-me/">
+				{% include services-backend.html %}
+			</a>
 		</div>
-		<div class="content">
-			<h3>Contact Me</h3>
-			<table class="contact-information">
-				<tbody>
-					<tr>
-						<th>email</th>
-						<td><a href="mailto:hello@builtinbruges.com">hello@builtinbruges.com</a></td>
-					</tr>
-					<tr>
-						<th>cell</th>
-						<td><a href="call:0032472373625">+32 472 37 36 25</a></td>
-					</tr>
-					<tr>
-						<th>skype</th>
-						<td><a href="skype:bertdevriese">bertdevriese</a></td>
-					</tr>
-					<tr>
-						<th>twitter</th>
-						<td><a href="http://www.twitter.com/brtdv">@brtdv</a></td>
-					</tr>
-					<tr>
-						<th>github</th>
-						<td><a href="http://www.github.com/brtdv">brtdv</a></td>
-					</tr>
-				</tbody>
-			</table>
+		<div class="col content">
+			{% include contact-information.html %}
 		</div>
 	</section>
 </div>
 
-<footer>
-	<div class="wrapper">
-		<span>&copy; 2014 Built in Bruges</span>
-		<span>Made with ♥ in Bruges, Belgium</span>
-	</div>
-</footer>
+{% include footer.html %}
 
-<!--
-
-<div class="wrapper">
-	<h1 class="no-js">Built in Bruges</h1>
-	<h2>I deliver high quality <strong>front-end web development</strong> for businesses and startups.</h2>
-	<h3>I have experience with different web technologies such as HTML5, CSS3, JavaScript, jQuery, HAML, Sass, PHP, Ruby on Rails, Jekyll, Bower, Grunt and Yeoman</h3>
-
-	<div class="mini-me">
-		<a href="mailto:hello@builtinbruges.com" onclick="ga('send', 'event', 'social', 'email-mini-me', 'compose');"><figure>Bert Devriese</figure></a>
-	</div>
-
-	<ul class="two-columns">
-		<li>
-			<h3>About me</h3>
-			<p>Hi, I’m <a href="">Bert Devriese</a>, a 28-year-old <strong>full stack developer</strong> who loves to sweat on the front-end details that make user interfaces for websites and web applications <strong>great</strong>.</p>
-			<p>I have been building websites since I was 12 years old and I currently have over 8 years of professional web-related experience.</p>
-			<p>Some of my most recent work includes coding the <strong>Trinch Webstudio CMS</strong>, designing and coding the <a href="http://www.trinch.com">trinch.com website</a>, a lot of front- &amp; back-end work on <a href="http://www.trinch.com/nl/projecten/">other websites</a> and designing and coding an <a href="http://www.trinch.com/nl/case-studies/8/filliers">in-house iPad application for Filliers</a> which syncs with a server-side application.</p>
-		</li>
-		<li>
-			<h3>Blog</h3>
-			<p>Occasionally, I write down my thoughts on different web technologies and apps.</p>
-			<section class="posts">
-				<ul>
-				{% assign counter = '' %}
-				{% for post in site.posts %}
-					{% capture difference %}{{ counter | size | minus:4 }}{% endcapture %}
-					{% unless difference contains '-' %}
-					{% else %}
-						{% if post.source_url == nil %}
-							{% capture counter %}{{ counter | append:'.' }}{% endcapture %}
-							<li>
-								<h5><em class="para">&para;</em> <a href="{{ post.url }}"{% if post.description != nil %} title="{{ post.description | escape }}"{% endif %}>{{ post.title }}</a></h5>
-								<time datetime="{{ post.date }}">{{ post.date | date: "%B %Y" }}</time>
-							</li>
-						{% endif %}
-					{% endunless %}
-				{% endfor %}
-				</ul>
-			</section>
-			<p><a href="blog.html" title="Built in Bruges Blog">Check out out my other blog posts</a></p>
-
-		</li>
-	</ul>
-</div>
-
-<div class="floormat">
-	<div class="wrapper">
-		<ul class="two-columns">
-			<li>
-				<h3>Interested in working together?</h3>
-				<p>Don't hesitate to contact me by sending me an e-mail, or via one of my social media profiles on Github, Twitter or Dribbble!</p>
-			</li>
-			<li>
-				<ul class="contact-options">
-					<li><a href="blog.html">Blog<em class="icon-feather"></em></a></li>
-					<li><a href="mailto:hello@builtinbruges.com" onclick="ga('send', 'event', 'social', 'email', 'compose');">Email me<em class="icon-envelope"></em></a></li>
-					<li><a href="http://www.twitter.com/brtdv" onclick="ga('send', 'event', 'social', 'twitter', 'visit');">Send me a tweet<em class="icon-twitter"></em></a></li>
-					<li><a href="http://www.dribbble.com/brtdv" onclick="ga('send', 'event', 'social', 'dribbble', 'visit');">Dribbble<em class="icon-dribbble"></em></a></li>
-					<li><a href="http://www.github.com/brtdv" onclick="ga('send', 'event', 'social', 'github', 'visit');">Github<em class="icon-github"></em></a></li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-</div>
-
--->
