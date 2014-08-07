@@ -1,8 +1,6 @@
 ---
 title: Text in Photoshop Tip
-
 layout: post
-wrapper: true
 ---
 ### A small annoyance
 

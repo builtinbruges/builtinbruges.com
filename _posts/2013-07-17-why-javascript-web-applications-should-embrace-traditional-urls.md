@@ -1,9 +1,6 @@
 ---
 title: Using traditional URLs in Javascript web applications
-
 layout: post
-wrapper: true
-
 source_url: http://9elements.com/io/index.php/hybrid-javascript-apps/
 ---
 [A good case][post-url] for the use of normal URL's and the HTML5 History API in javascript Web Applications, particularly in the Backbone.js framework.

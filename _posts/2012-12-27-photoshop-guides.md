@@ -1,9 +1,6 @@
 ---
 title: Photoshop Guides
-
 layout: post
-wrapper: true
-
 source_url: http://guideguide.me
 ---
 Using guides in photoshop always has been a [PITA](http://www.urbandictionary.com/define.php?term=PITA "Pain in the Ass") for me. But I've been using a handy plugin for the past few months and I thought I'd share.

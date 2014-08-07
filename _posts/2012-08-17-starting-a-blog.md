@@ -1,8 +1,6 @@
 ---
 title: I'm starting a blog!
-
 layout: post
-wrapper: true
 ---
 As of today, I have [100 dribbble followers](http://dribbble.com/brtdv). No big deal, I know, but it gave me a boost to try to write stuff on a 'blog'.
 

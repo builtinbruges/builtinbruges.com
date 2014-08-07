@@ -1,8 +1,6 @@
 ---
 title: When designing, use HSB instead of RGB
-
 layout: post
-wrapper: true
 ---
 Something [I tweeted about a while ago](https://twitter.com/brtdv/status/357224769571131392), but still proved to be very usefull this week.
 

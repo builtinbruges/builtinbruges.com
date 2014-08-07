@@ -1,8 +1,6 @@
 ---
 title: Repeat last terminal command
-
 layout: post
-wrapper: true
 ---
 Ever executed a command for which you needed root permissions (e.g. via `sudo`) but find yourself needing to retype the whole thing?
 

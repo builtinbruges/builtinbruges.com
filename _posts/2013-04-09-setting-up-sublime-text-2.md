@@ -1,10 +1,7 @@
 ---
 title: Setting up Sublime Text 2
 date: 2013-04-09 22:20:00 +02:00
-
 layout: post
-wrapper: true
-
 source_url: http://blog.alexmaccaw.com/sublime-text
 ---
 Great post by [Alex Maccaw][alex_maccaw] with some great tips for setting up my favorite editor, Sublime Text 2.

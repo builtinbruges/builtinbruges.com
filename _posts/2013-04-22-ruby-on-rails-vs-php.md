@@ -1,9 +1,6 @@
 ---
 title: Ruby on Rails vs. PHP
-
 layout: post
-wrapper: true
-
 source_url: http://www.leonardteo.com/p/ruby-on-rails-vs-php-the-good-the-bad
 ---
 Great [PHP/RoR comparison][post-url] by [Leonard Teo][leonardteo]

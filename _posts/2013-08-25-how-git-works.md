@@ -1,9 +1,6 @@
 ---
 title: How git works
-
 layout: post
-wrapper: true
-
 source_url: http://slidetocode.com/2013/08/25/how-git-works/
 ---
 [Cool article][post-url] where the author digs around in the internal workings of Git
