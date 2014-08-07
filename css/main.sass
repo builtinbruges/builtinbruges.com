@@ -160,6 +160,9 @@ header
         float: right
         margin: 0
 
+    li.active a
+      color: #FF3B30
+
     a
       display: block
       color: #777
@@ -169,6 +172,7 @@ header
       &:hover
         text-decoration: none
         color: #222
+
 
     @media (max-width: 720px)
       margin: 25px 0 0 220px
@@ -669,6 +673,9 @@ body.about-me
       ul
         border-bottom: 2px solid #fff
 
+      li.active a
+        color: #FF3B30
+
       a
         color: #f1f1f1
 
@@ -686,6 +693,7 @@ body.home
       position: 50% 50%
       size: cover
       repeat: no-repeat
+    min-height: 575px
 
     .atoms-big
       position: absolute
@@ -823,7 +831,7 @@ body.about-me
       position: 50% 55%
       size: cover
       repeat: no-repeat
-    min-height: 550px
+    min-height: 575px
 
   @media (max-width: 720px)
     header

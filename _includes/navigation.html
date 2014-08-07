@@ -1,8 +1,8 @@
 <nav>
 	<ul>
-		<li><a href="/about-me/" onclick="ga('send', 'event', 'About Me', 'visit', 'Click from navigation');">About Me<span class="ss-right"></span></a></li>
-		<li><a href="/work/" onclick="ga('send', 'event', 'My Work', 'visit', 'Click from navigation');">Work<span class="ss-right"></span></a></li>
-		<li><a href="/blog/" onclick="ga('send', 'event', 'Blog', 'visit', 'Click from navigation');">Blog<span class="ss-right"></span></a></li>
-		<li><a href="/hire-me/" onclick="ga('send', 'event', 'Hire Me', 'visit', 'Click from navigation');">Hire Me<span class="ss-right"></span></a></li>
+		<li{% if page.url == '/about-me/' %} class="active"{% endif %}><a href="/about-me/" onclick="ga('send', 'event', 'About Me', 'visit', 'Click from navigation');">About Me<span class="ss-right"></span></a></li>
+		<li{% if page.url == '/work/' %} class="active"{% endif %}><a href="/work/" onclick="ga('send', 'event', 'My Work', 'visit', 'Click from navigation');">Work<span class="ss-right"></span></a></li>
+		<li{% if page.url == '/blog/' %} class="active"{% endif %}><a href="/blog/" onclick="ga('send', 'event', 'Blog', 'visit', 'Click from navigation');">Blog<span class="ss-right"></span></a></li>
+		<li{% if page.url == '/hire-me/' %} class="active"{% endif %}><a href="/hire-me/" onclick="ga('send', 'event', 'Hire Me', 'visit', 'Click from navigation');">Hire Me<span class="ss-right"></span></a></li>
 	</ul>
 </nav>
