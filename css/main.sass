@@ -366,7 +366,7 @@ footer
       top: -3px
       font-size: 14px
 
-  @media (min-width: 960px)
+  @media (min-width: 9999px) // disable 2col layout for now
     > li:nth-child(odd)
       .description
         float: left
@@ -416,16 +416,23 @@ footer
       -moz-box-sizing: border-box
       box-sizing: border-box
 
-      &:nth-child(1)
-        height: 350px
-        border-right: 2px solid #fff
+    li:nth-child(1)
+      height: 350px
+      border-right: 2px solid #fff
 
-      &:nth-child(2),
-      &:nth-child(3)
-        height: 175px
+    li:nth-child(2),
+    li:nth-child(3)
+      height: 175px
 
-      &:nth-child(2)
-        border-bottom: 2px solid #fff
+    li:nth-child(2)
+      border-bottom: 2px solid #fff
+
+  > li:nth-child(even)
+    .pictures
+      li:nth-child(1)
+        float: right
+        border-left: 2px solid #fff
+        border-right: none
 
 
 // ----------------------------------------------------------------------------
@@ -528,6 +535,31 @@ body.blog-post
 
   > *:last-child
     margin-bottom: 0
+
+
+// ----------------------------------------------------------------------------
+// About Me
+.floormat
+  background-color: #F7F1E3
+  background-image: -moz-linear-gradient(-90deg, rgba(215,215,215,0.80) 0%, rgba(237,237,237,0.00) 3%), -moz-linear-gradient(-90deg, #F7F1E3 0%, #FFFCF5 100%)
+  background-image: -ms-linear-gradient(-90deg, rgba(215,215,215,0.80) 0%, rgba(237,237,237,0.00) 3%), -ms-linear-gradient(-90deg, #F7F1E3 0%, #FFFCF5 100%)
+  background-image: linear-gradient(-180deg, rgba(215,215,215,0.80) 0%, rgba(237,237,237,0.00) 3%), linear-gradient(-180deg, #F7F1E3 0%, #FFFCF5 100%)
+  text-align: center
+  color: #444
+  padding: 50px 20px
+
+  h3
+    font-size: 24px
+    font-weight: 600
+    margin: 0 0 20px
+
+  p
+    margin: 0 0 20px
+
+  .cta-button
+    display: inline-block
+    margin: 10px 0 0px
+
 
 // --------------------------------------------------------------------------
 // Contact Form
@@ -650,6 +682,9 @@ body.home
     float: right
     margin: 45px 0 0 20px
 
+  .contact-information tr:last-child
+    display: none
+
 @-webkit-keyframes rotate
   0%
     -webkit-transform: rotate(0deg)
@@ -668,6 +703,7 @@ body.home
 body.blog
   .pretzel
     color: #FF3B30
+
 
 body.blog-post
   .posts
