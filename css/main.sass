@@ -1,7 +1,7 @@
 ---
 ---
 // ----------------------------------------------------------------------------
-// Home Page Special
+// General Styles
 body
   font:
     family: 'Helvetica Neue', Helvetica, Arial, Verdana, sans-serif
@@ -26,6 +26,7 @@ a
 
   &:hover
     text-decoration: underline
+
 
 // ----------------------------------------------------------------------------
 // Call To Action Button
@@ -68,9 +69,11 @@ header
     float: left
     text-transform: uppercase
     line-height: 25px
-    font-weight: 200
     letter-spacing: 1px
     margin: -1px 0 15px
+
+    strong
+      font-weight: 200
 
     a:hover
       text-decoration: none
@@ -109,6 +112,9 @@ header
       padding: 0 0 5px
       border-bottom: 2px solid #999
 
+    span
+      display: none
+
     li
       display: inline-block
       margin: 0 15px 0 0
@@ -142,10 +148,12 @@ header
 
 
 // ----------------------------------------------------------------------------
-// Header
+// Aside
 aside
   .contact-information
     margin: 0 0 30px
+    @media (max-width: 720px)
+      display: none
 
   #gmap
     height: 200px
@@ -156,9 +164,35 @@ aside
   address
     margin: 0 0 20px
 
+  nav
+    display: none
+    margin: 30px -25px 0
+
+    @media (max-width: 720px)
+      display: block
+
+    li:not(:last-child)
+      border-bottom: 1px solid #eee
+
+    a
+      font-size: 18px
+      display: block
+      background: #f9f9f9
+      color: #FF3B30
+      padding: 10px 25px
+
+      span
+        font-size: 14px
+        float: right
+
+      &:hover,
+      &:active
+        background: #f1f1f1
+        text-decoration: none
+
 
 // ----------------------------------------------------------------------------
-// Header
+// Footer
 footer
   overflow: hidden
   font-size: 14px
@@ -267,6 +301,30 @@ footer
       text-align: right
 
 
+.contact-bubbles
+  text-align: center
+
+  li
+    display: inline-block
+
+  a
+    display: block
+    width: 45px
+    height: 45px
+    border-radius: 50px
+    line-height: 50px
+    font-weight: 700
+    font-size: 24px
+    background-color: #FF3B30
+    color: #fff
+    margin: 0 1px
+    transition: all 75ms cubic-bezier(.05,.48,.48,.95)
+
+    &:hover
+      background-color: #D32D24
+      text-decoration: none
+
+
 // ----------------------------------------------------------------------------
 // Work / Portfolio
 .portfolio
@@ -371,6 +429,75 @@ footer
 
 
 // ----------------------------------------------------------------------------
+// Blog Posts
+.posts
+  li
+    display: block
+    margin: 0 -25px
+
+    > a
+      display: block
+      overflow: hidden
+      padding: 10px 25px
+      transition: background 25ms cubic-bezier(.05,.48,.48,.95)
+
+      &:hover,
+      &:active
+        text-decoration: none
+        background: #FF3B30
+
+        h3,
+        .pretzel
+          color: #fff
+        time
+          color: #eee
+
+    h3,
+    time
+      display: inline
+
+    h3
+      font-weight: 600
+      color: #555
+
+    time
+      float: right
+      font-size: 14px
+      color: #999
+
+  li:nth-child(even)
+    background-color: #f9f9f9
+
+
+.post-nav
+  margin: 30px -25px 0
+
+  a
+    display: block
+    padding: 5px 25px
+    transition: all 25ms cubic-bezier(.05,.48,.48,.95)
+
+    span
+      display: inline-block
+      font-size: 12px
+      margin: 0 5px 0 0
+
+    &:hover
+      text-decoration: none
+      background: #FF3B30
+      color: #fff
+
+// ----------------------------------------------------------------------------
+// Blog Post
+body.blog-post
+  .markdown
+    h1
+      line-height: 40px
+
+    .pretzel
+      color: #333
+
+// ----------------------------------------------------------------------------
 // Default Textual Styles
 .content
   &.container
@@ -399,7 +526,7 @@ footer
   p, li
     color: #555
 
-  *:last-child
+  > *:last-child
     margin-bottom: 0
 
 // --------------------------------------------------------------------------
@@ -459,15 +586,15 @@ body.about-me
     background: #25201C
     color: #FFFFFF
 
-  nav
-    ul
-      border-bottom: 2px solid #fff
+    nav
+      ul
+        border-bottom: 2px solid #fff
 
-    a
-      color: #f1f1f1
+      a
+        color: #f1f1f1
 
-    a:hover
-      color: #fff
+      a:hover
+        color: #fff
 
 // ----------------------------------------------------------------------------
 // Home Page Special
@@ -516,6 +643,9 @@ body.home
       animation-iteration-count: infinite
       animation-timing-function: linear
 
+  .contact-bubbles
+    display: none
+
   .content.container .cta-button
     float: right
     margin: 45px 0 0 20px
@@ -531,6 +661,76 @@ body.home
     transform: rotate(0deg)
   100%
     transform: rotate(360deg)
+
+
+// ----------------------------------------------------------------------------
+// Blog
+body.blog
+  .pretzel
+    color: #FF3B30
+
+body.blog-post
+  .posts
+    border-top: 1px solid #eee
+    padding-top: 40px
+    margin: 40px 0
+
+    .content h3
+      margin: 0 0 10px
+
+.markdown
+  > *:first-child
+    margin-top: 0
+    margin-bottom: 35px
+
+  h1, h3, h5
+    color: #FF3B30
+    margin: 10px 0 10px
+  h2, h4, h5
+    color: #444
+    font-weight: 600
+    margin: 10px 0 10px
+
+  h1
+    font-size: 30px
+
+  h2
+    font-size: 26px
+
+  h3
+    font-size: 22px
+    font-style: italic
+
+  h4
+    font-size: 20px
+
+  h5
+    font-size: 18px
+
+  h6
+    font-size: 16px
+
+  code
+    display: inline-block
+    font-family: 'Menlo', 'Courier New', sans-serif
+    background: #f9f9f9
+    font-size: 14px
+
+  pre > code
+    display: block
+    background: #f9f9f9
+    border-radius: 2px
+    overflow-x: auto
+    padding: 10px
+    margin: 0 0 20px
+
+  blockquote
+    padding-left: 20px
+    border-left: 2px solid #eee
+
+    > p,
+    > li
+      color: #888
 
 // ----------------------------------------------------------------------------
 // About Me

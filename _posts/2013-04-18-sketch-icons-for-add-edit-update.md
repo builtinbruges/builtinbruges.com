@@ -1,7 +1,7 @@
 ---
 title: Sketch icons
 
-layout: post_md
+layout: post
 wrapper: true
 
 source_url: http://dribbble.com/shots/1035024-Buttons

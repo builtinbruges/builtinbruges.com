@@ -2,7 +2,7 @@
 title: Setting up Sublime Text 2
 date: 2013-04-09 22:20:00 +02:00
 
-layout: post_md
+layout: post
 wrapper: true
 
 source_url: http://blog.alexmaccaw.com/sublime-text

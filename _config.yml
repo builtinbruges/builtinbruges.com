@@ -2,8 +2,12 @@ permalink: /:year/:month/:title
 post_dirs: true
 url: http://www.builtinbruges.com
 
-markdown: kramdown
-highlighter: true
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - hard_wrap
+    - autolink
 
 timezone: Europe/Brussels
 encoding: UTF-8

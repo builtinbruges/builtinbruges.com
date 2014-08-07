@@ -1,7 +1,7 @@
 ---
 title: Photoshop Flexibility
 
-layout: post_md
+layout: post
 wrapper: true
 
 source_url: http://michieldegraaf.com/post/photoshop-flexibility

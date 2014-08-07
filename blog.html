@@ -13,13 +13,30 @@ body_class: blog
 
 <section class="wrapper two-cols two-nav-cols with-border">
 	<div class="col">
-		sdfasdf
+		<div class="content" style="margin-bottom: 30px;">
+			<h1>Blog</h1>
+			<p>Over the years, I've written down a few of my thoughts and ideas on apps and web technologies. Some blog posts are links to other authors' posts that I found interesting, and others are articles I've written myself. The self-written articles are marked with the command key symbol <em class="pretzel" title="Pretzels, anyone?">&#x2318;</em>.</p>
+		</div>
+		<ul class="posts">
+			{% for post in site.posts %}
+			<li>
+				<a href="{{ post.url }}"{% if post.description != nil %} title="{{ post.description | escape }}"{% endif %}>
+					<h3>
+						{% if post.source_url == nil %}<em class="pretzel" title="Pretzels, anyone?">&#x2318;</em> {% endif %}
+						{{ post.title }}
+					</h3>
+					<time datetime="{{ post.date }}">{{ post.date | date: "%B %Y" }}</time>
+				</a>
+			</li>
+			{% endfor %}
+		</ul>
 	</div>
 	<aside class="col">
 		<div class="content ca">
 			{% include contact-information.html %}
 			{% include contact-map.html %}
 			{% include contact-financial.html %}
+			{% include navigation.html %}
 		</div>
 	</aside>
 </section>

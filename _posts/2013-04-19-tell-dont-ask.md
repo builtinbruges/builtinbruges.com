@@ -1,7 +1,7 @@
 ---
 title: Tell, don't ask
 
-layout: post_md
+layout: post
 wrapper: true
 
 source_url: http://robots.thoughtbot.com/post/27572137956/tell-dont-ask

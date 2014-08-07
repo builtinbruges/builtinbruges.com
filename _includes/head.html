@@ -10,12 +10,16 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="{{ site.description }}">
+
+	{% if page.source_url == nil %}
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	{% endif  %}
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="{{ "/css/reset.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/ss-glyphish-outlined.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ "/css/pygments.css" | prepend: site.baseurl }}">
 
 	<!-- TypeKit -->
 	<!--

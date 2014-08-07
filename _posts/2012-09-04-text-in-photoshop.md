@@ -1,7 +1,7 @@
 ---
 title: Text in Photoshop Tip
 
-layout: post_md
+layout: post
 wrapper: true
 ---
 ### A small annoyance

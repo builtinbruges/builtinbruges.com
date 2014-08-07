@@ -1,7 +1,7 @@
 ---
 title: Remove last GIT commit
 
-layout: post_md
+layout: post
 wrapper: true
 ---
 When you work with a versioning system like Git or Subversion, you'll sometimes commit stuff and notice right after you did so that your commit is, well... *garbage*.

@@ -1,7 +1,7 @@
 ---
 title: Extract all e-mails stored in Apple Mail
 
-layout: post_md
+layout: post
 wrapper: true
 
 source_url: http://www.dontstopthesignal.com/2010/10/extracting-e-mail-addresses-from-apple.html

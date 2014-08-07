@@ -1,7 +1,7 @@
 ---
 title: Photoshop Guides
 
-layout: post_md
+layout: post
 wrapper: true
 
 source_url: http://guideguide.me

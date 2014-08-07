@@ -1,7 +1,7 @@
 ---
 title: Ruby on Rails vs. PHP
 
-layout: post_md
+layout: post
 wrapper: true
 
 source_url: http://www.leonardteo.com/p/ruby-on-rails-vs-php-the-good-the-bad

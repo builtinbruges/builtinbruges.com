@@ -1,7 +1,7 @@
 ---
 title: Using traditional URLs in Javascript web applications
 
-layout: post_md
+layout: post
 wrapper: true
 
 source_url: http://9elements.com/io/index.php/hybrid-javascript-apps/

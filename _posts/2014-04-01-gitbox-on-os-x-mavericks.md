@@ -2,7 +2,7 @@
 title: Getting Gitbox to run properly on Mac OS X 10.9 Mavericks
 description: How to get Gitbox to run nicely on Mac OS X 10.9 Mavericks. It's been so long since an update and it seems the app is dead. These tips will help you to run Gitbox smoothly on Mavericks
 
-layout: post_md
+layout: post
 wrapper: true
 ---
 

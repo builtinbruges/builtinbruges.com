@@ -1,7 +1,7 @@
 ---
 title: Using Ajax Content in Jekyll websites
 
-layout: post_md
+layout: post
 wrapper: true
 ---
 This post is a follow-up to my previous post, ["Using traditional URLs in Javascript web applications"][previous-post-url].
