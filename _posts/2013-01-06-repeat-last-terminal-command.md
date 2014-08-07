@@ -14,4 +14,4 @@ This is very useful in the form
 
 This way, you can easily re-execute a command for which you did not have enough permissions, *with* the required root permissions.
 
-I found this tip in a [Stackoverflow](http://stackoverflow.com/questions/68372/what-is-your-single-most-favorite-command-line-trick-using-bash) discussion which contains some other good commands as wel. Check it out!
+I found this tip in a [Stackoverflow](http://stackoverflow.com/questions/68372/what-is-your-single-most-favorite-command-line-trick-using-bash) discussion which contains some other good commands as well. Check it out!
