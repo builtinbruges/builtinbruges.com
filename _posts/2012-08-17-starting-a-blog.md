@@ -1,6 +1,5 @@
 ---
 title: I'm starting a blog!
-description: This post describes how you can easily delete a file that's in use on OS X using a few simpel terminal commands
 
 layout: post
 wrapper: true
