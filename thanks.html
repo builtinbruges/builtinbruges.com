@@ -1,0 +1,42 @@
+---
+title: Thanks!
+
+permalink: thanks/
+layout: default
+body_class: thanks
+---
+
+<header>
+	{% include header.html %}
+</header>
+
+<script>
+
+$(document).ready(function ()
+{
+	ga('send', 'event', 'Hire Me', 'completed', 'Hire me form completed!');
+});
+
+</script>
+
+<section class="wrapper two-cols two-nav-cols with-border">
+	<div class="col">
+		<div class="content ca">
+			<h1>Thank you!</h1>
+			<span class="heart-icon"><span class="ss-heart"></span></span>
+			<h4>Thank you for contacting me! <br /> I'll get back to you as soon as possible!</h4>
+			<h4><a href="/">Click here to return to the homepage!</a></h4>
+		</div>
+	</div>
+	<aside class="col">
+		<div class="ca">
+			{% include contact-information.html %}
+			{% include contact-map.html %}
+			{% include contact-financial.html %}
+			{% include navigation.html %}
+		</div>
+	</aside>
+</section>
+
+{% include footer.html %}
+
