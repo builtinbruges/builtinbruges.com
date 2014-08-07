@@ -173,7 +173,6 @@ header
         text-decoration: none
         color: #222
 
-
     @media (max-width: 720px)
       margin: 25px 0 0 220px
 
@@ -182,6 +181,14 @@ header
         display: block
         float: none
         text-align: left
+
+  @media (max-width: 320px)
+    hgroup
+      width: 120px
+
+    nav
+      margin: 25px 0 0 140px
+
 
 @media (-webkit-min-device-pixel-ratio: 2)
   header h2 .logo
@@ -193,6 +200,7 @@ header
 aside
   .contact-information
     margin: 0 0 30px
+
     @media (max-width: 720px)
       display: none
 
@@ -346,6 +354,9 @@ footer
   text-align: center
   padding: 0 !important
   margin: -10px 0 30px !important
+
+  @media (max-width: 720px)
+    margin: 20px 0 30px !important
 
   li
     display: inline-block
