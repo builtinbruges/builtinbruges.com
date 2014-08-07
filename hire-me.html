@@ -16,6 +16,26 @@ sitemap:
 	{% include header.html %}
 </header>
 
+<script type="text/javascript">
+
+var key_up = false;
+
+function key_pressed()
+{
+	if (key_up == false)
+	{
+		ga('send', 'event', 'Hire Me', 'filling', 'Started entering stuff in form')
+		key_up = true;
+	}
+}
+
+$(document).ready(function ()
+{
+	setTimeout(function () { ga('send', 'event', 'Hire Me', 'stranded', 'Looked at page for 30+ seconds'); }, 30000);
+});
+
+</script>
+
 <section class="wrapper two-cols two-nav-cols with-border">
 	<div class="col">
 		<div class="content">
@@ -26,19 +46,19 @@ sitemap:
 		<form class="contact-form" action="php/hireme.php" method="POST">
 			<div class="field">
 				<label for="name">Name</label>
-				<input type="text" name="name" id="name" autofocus />
+				<input type="text" name="name" id="name" onkeyup="key_pressed()" autofocus />
 			</div>
 			<div class="field">
 				<label for="company">Company</label>
-				<input type="text" name="company" id="company" />
+				<input type="text" name="company" id="company" onkeyup="key_pressed()" />
 			</div>
 			<div class="field">
 				<label for="email">E-mail address</label>
-				<input type="text" name="email" id="email" />
+				<input type="text" name="email" id="email" onkeyup="key_pressed()" />
 			</div>
 			<div class="field">
 				<label for="message">Message</label>
-				<textarea name="message" id="message"></textarea>
+				<textarea name="message" id="message" onkeyup="key_pressed()"></textarea>
 			</div>
 			<div class="field button">
 				<label>&nbsp;</label>
