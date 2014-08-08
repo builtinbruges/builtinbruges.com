@@ -32,7 +32,7 @@ Redirect 301 /blog/page3/ http://www.builtinbruges.com/blog.html
 Redirect 301 /blog/page2/ http://www.builtinbruges.com/blog.html
 
 # Redirects for new website
-Redirect 301 /blog.html http://www.builtinbruges.com/blog/
-Redirect 301 /archive.html http://www.builtinbruges.com/blog/
-Redirect 301 /contact.html http://www.builtinbruges.com/hire-me/
-Redirect 301 /clients.html http://www.builtinbruges.com/work/
+Redirect 301 /blog.html http://www.builtinbruges.com/en/blog/
+Redirect 301 /archive.html http://www.builtinbruges.com/en/blog/
+Redirect 301 /contact.html http://www.builtinbruges.com/en/hire-me/
+Redirect 301 /clients.html http://www.builtinbruges.com/en/work/

@@ -37,5 +37,5 @@ $headers .= 'Reply-To: '.$email."\r\n" .
 
 mail($to, $subject, $message, $headers);
 
-header('Location: /thanks/');
+header('Location: /en/thanks/');
 die(0);

@@ -1,7 +1,8 @@
 ---
 title: Getting Gitbox to run properly on Mac OS X 10.9 Mavericks
 description: How to get Gitbox to run nicely on Mac OS X 10.9 Mavericks. It's been so long since an update and it seems the app is dead. These tips will help you to run Gitbox smoothly on Mavericks
-layout: post
+layout: en/post
+lang: en
 ---
 
 [Gitbox][gitbox] is, in my opinion, the simplest and most elegant Git GUI app out there. The app looks great and has the right amount of functionality. It provides functionality for all basic git stuff like commiting, merging, pushing and pulling and even cherry-picking and rebasing, without the need for me to go dive in the command-line to execute git commands for which I don't remember the exact syntax anymore. The app is only $14.99 on the App store, so for a tool I use everyday that's a pretty good price as well.

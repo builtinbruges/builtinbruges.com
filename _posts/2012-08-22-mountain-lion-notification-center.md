@@ -1,6 +1,7 @@
 ---
 title: Mountain Lion Notification Center
-layout: post
+layout: en/post
+lang: en
 
 source_url: https://twitter.com/adambetts/statuses/238719670620925952
 ---

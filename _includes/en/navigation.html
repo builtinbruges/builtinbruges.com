@@ -1,0 +1,8 @@
+<nav>
+	<ul>
+		<li{% if page.url == '/en/about-me/' %} class="active"{% endif %}><a href="/en/about-me/" onclick="ga('send', 'event', 'About Me', 'visit', 'Click from navigation');">About Me<span class="ss-right"></span></a></li>
+		<li{% if page.url == '/en/work/' %} class="active"{% endif %}><a href="/en/work/" onclick="ga('send', 'event', 'My Work', 'visit', 'Click from navigation');">Work<span class="ss-right"></span></a></li>
+		<li{% if page.url == '/en/blog/' %} class="active"{% endif %}><a href="/en/blog/" onclick="ga('send', 'event', 'Blog', 'visit', 'Click from navigation');">Blog<span class="ss-right"></span></a></li>
+		<li{% if page.url == '/en/hire-me/' %} class="active"{% endif %}><a href="/en/hire-me/" onclick="ga('send', 'event', 'Hire Me', 'visit', 'Click from navigation');">Hire Me<span class="ss-right"></span></a></li>
+	</ul>
+</nav>

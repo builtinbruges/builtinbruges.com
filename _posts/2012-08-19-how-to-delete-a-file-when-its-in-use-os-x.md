@@ -1,7 +1,8 @@
 ---
 title: How to delete a file when it's in use on OS X
 description: This post describes how you can easily delete a file that's in use on Mac OS X using a few simple terminal commands
-layout: post
+layout: en/post
+lang: en
 ---
 I'm sure everyone has experienced this problem at one point: you want to delete a file in the Finder but you can't because it tells you it's in use. Here's how you can handle that problem.
 

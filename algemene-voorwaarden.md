@@ -1,7 +1,8 @@
 ---
 title: Algemene Voorwaarden
 description: Algemene Factuur en Betalingsvoorwaarden
-layout: post
+layout: en/post
+lang: nl
 permalink: algemene-voorwaarden/
 ---
 

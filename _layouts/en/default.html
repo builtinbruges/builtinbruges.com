@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html{% if page.lang != nil and page.lang != empty %} lang="{{ page.lang }}"{% endif %}>
 	{% include head.html %}
 	<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
 		{{ content }}

@@ -1,7 +1,8 @@
 ---
 title: CSS Border Radius
 description: A more convenient way to define CSS border radius rules together with the border size, style and color in one line
-layout: post
+layout: en/post
+lang: en
 ---
 If you're familiar with CSS, you might know that writing
 

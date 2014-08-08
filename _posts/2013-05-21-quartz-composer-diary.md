@@ -1,6 +1,7 @@
 ---
 title: Quartz Composer Diary
-layout: post
+layout: en/post
+lang: en
 source_url: http://qc.prabros.com/primer2.html
 ---
 Great [blog][blog-url] with some [excellent resources][post-url] on how to get started with interaction design in Quartz Composer.

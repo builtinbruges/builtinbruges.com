@@ -1,6 +1,7 @@
 ---
 title: Text in Photoshop Tip
-layout: post
+layout: en/post
+lang: en
 ---
 ### A small annoyance
 

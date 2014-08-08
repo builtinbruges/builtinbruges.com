@@ -2,8 +2,9 @@
 title: Front-End Web Design &amp; Full Stack Web Development
 description: Built In Bruges — Quality front-end web design &amp; full stack web development from the beautiful Brugge, West-Vlaanderen, Belgium
 
-layout: default
+layout: en/default
 body_class: home
+lang: en
 
 sitemap:
   priority: 1
@@ -12,7 +13,7 @@ sitemap:
 ---
 
 <header>
-	{% include header.html %}
+	{% include en/header.html %}
 	<div class="atoms-big"></div>
 	<div class="atoms-small"></div>
 	<div class="wrapper">
@@ -27,29 +28,29 @@ sitemap:
 			<div class="col">
 				<h3>What I do</h3>
 				<p>I help you think about your projects and have the ability to work on <strong>custom applications</strong> that <strong>work for you and your users</strong>. I can handle a full project, from front- to backend, fully tailored to your needs, completely <span title="Hence, Built in Bruges ;-)">in-house</span>.</p>
-				<p>I have experience with different web technologies such as HTML5, CSS3, JavaScript, jQuery, HAML, Sass, PHP, Ruby on Rails, Jekyll, Bower, Grunt and Yeoman. Check out <a href="/work/">my work</a> to get an idea of some of the projects I have completed over the last few years.</p>
+				<p>I have experience with different web technologies such as HTML5, CSS3, JavaScript, jQuery, HAML, Sass, PHP, Ruby on Rails, Jekyll, Bower, Grunt and Yeoman. Check out <a href="/en/work/">my work</a> to get an idea of some of the projects I have completed over the last few years.</p>
 			</div>
 			<div class="col">
-				<a href="/hire-me/" class="cta-button" onclick="ga('send', 'event', 'Hire Me', 'visit', 'Click from homepage');">Hire Me</a>
+				<a href="/en/hire-me/" class="cta-button" onclick="ga('send', 'event', 'Hire Me', 'visit', 'Click from homepage');">Hire Me</a>
 			</div>
 		</section>
 	</div>
 	<hr />
 	<section class="three-cols with-border">
 		<div class="col col-linked content">
-			<a href="/about-me/" onclick="ga('send', 'event', 'About Me', 'visit', 'Click from homepage');">
+			<a href="/en/about-me/" onclick="ga('send', 'event', 'About Me', 'visit', 'Click from homepage');">
 				<h3>About Me</h3>
 				<p>Learn more about myself and my web related experience</p>
 			</a>
 		</div>
 		<div class="col col-linked content">
-			<a href="/work/" onclick="ga('send', 'event', 'My Work', 'visit', 'Click from homepage');">
+			<a href="/en/work/" onclick="ga('send', 'event', 'My Work', 'visit', 'Click from homepage');">
 				<h3>My Work</h3>
 				<p>Learn more about my work and latest projects</p>
 			</a>
 		</div>
 		<div class="col col-linked content">
-			<a href="/blog/" onclick="ga('send', 'event', 'Blog', 'visit', 'Click from homepage');">
+			<a href="/en/blog/" onclick="ga('send', 'event', 'Blog', 'visit', 'Click from homepage');">
 				<h3>Blog</h3>
 				<p>Sometimes I write down my thoughts about tech trends/apps</p>
 			</a>
@@ -58,20 +59,20 @@ sitemap:
 	<hr />
 	<section class="three-cols with-border">
 		<div class="col col-linked content">
-			<a href="/about-me/" onclick="ga('send', 'event', 'About Me', 'visit', 'Click from homepage - Services frontend');">
-				{% include services-frontend.html %}
+			<a href="/en/about-me/" onclick="ga('send', 'event', 'About Me', 'visit', 'Click from homepage - Services frontend');">
+				{% include en/services-frontend.html %}
 			</a>
 		</div>
 		<div class="col col-linked content">
-			<a href="/about-me/" onclick="ga('send', 'event', 'About Me', 'visit', 'Click from homepage - Services backend');">
-				{% include services-backend.html %}
+			<a href="/en/about-me/" onclick="ga('send', 'event', 'About Me', 'visit', 'Click from homepage - Services backend');">
+				{% include en/services-backend.html %}
 			</a>
 		</div>
 		<div class="col content">
-			{% include contact-information.html %}
+			{% include en/contact-information.html %}
 		</div>
 	</section>
 </div>
 
-{% include footer.html %}
+{% include en/footer.html %}
 

@@ -1,6 +1,7 @@
 ---
 title: CSSCSS redundancy analyzer
-layout: post
+layout: en/post
+lang: en
 source_url: http://zmoazeni.github.io/csscss/
 ---
 The creators of the [Chosen][chosen] jQuery plugin have released a new tool: [CSSCSS][csscss]. It's a tool that can help you search for duplicate CSS rules.

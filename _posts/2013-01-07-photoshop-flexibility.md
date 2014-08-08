@@ -1,6 +1,7 @@
 ---
 title: Photoshop Flexibility
-layout: post
+layout: en/post
+lang: en
 source_url: http://michieldegraaf.com/post/photoshop-flexibility
 ---
 [Neat blogpost](http://michieldegraaf.com/post/photoshop-flexibility) by Michiel de Graaf.

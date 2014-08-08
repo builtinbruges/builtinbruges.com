@@ -1,6 +1,7 @@
 ---
 title: Designing the new Foursquare
-layout: post
+layout: en/post
+lang: en
 source_url: https://medium.com/@sambrown/designing-the-new-foursquare-8f8788d366f0
 date: 2014-08-08T15:42:50+02:00
 ---
