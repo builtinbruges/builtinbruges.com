@@ -22,6 +22,11 @@
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/pygments.css" | prepend: site.baseurl }}">
 
+	<!-- TypeKit -->
+	<script type="text/javascript" src="//use.typekit.net/{{ site.typekit.kit_id }}.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<!-- jQuery, Analytics & Google Maps -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true&language=nl"></script>
 	{% include analytics.html %}
