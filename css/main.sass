@@ -283,8 +283,20 @@ footer
     padding: 30px 25px
 
   .col-linked > a:hover
-    background: #f9f9f9
+    background-color: #f9f9f9
     text-decoration: none
+
+  .col-linked > a
+    background:
+      image: url(../img/continue.png)
+      position: right 20px top 40px
+      repeat: no-repeat
+
+    @media (-webkit-min-device-pixel-ratio: 2)
+      background:
+        image: url(../img/continue@2x.png)
+        size: 14px 14px
+
 
   @media (min-width: 720px)
     overflow: hidden
@@ -314,7 +326,7 @@ footer
       padding: 30px 0
 
   .col-linked > a:hover
-    background: #f9f9f9
+    background-color: #f9f9f9
     text-decoration: none
 
   @media (min-width: 720px)
@@ -774,12 +786,31 @@ body.home
   .contact-bubbles
     display: none
 
-  .content.container .cta-button
-    float: right
-    margin: 45px 0 0 20px
+  .cta-button
+    display: block
+    text-align: center
+    white-space: nowrap
 
   .contact-information tr:last-child
     display: none
+
+  @media (min-width: 720px)
+    .cta-button
+      margin: 45px 0 0 0
+
+    .two-cols
+      .col:first-child
+        width: 80%
+      .col:last-child
+        padding-left: 0
+        width: 20%
+
+  @media (max-width: 720px)
+    .two-cols
+      .col:first-child
+        padding-bottom: 0
+      .col:last-child
+        padding-top: 0
 
 @-webkit-keyframes rotate
   0%
