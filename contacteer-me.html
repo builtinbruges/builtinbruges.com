@@ -1,10 +1,10 @@
 ---
-title: Hire Me
-description: If you'd like to hire me you should fill in the form on this page
+title: Contacteer Me
+description: Als je mij wil contacteren of inhuren kan je het formulier op deze pagina invullen
 
-permalink: en/hire-me/
-layout: en/default
-lang: en
+permalink: nl/contacteer-me/
+layout: nl/default
+lang: nl
 body_class: hire-me
 
 sitemap:
@@ -14,7 +14,7 @@ sitemap:
 ---
 
 <header>
-	{% include en/header.html %}
+	{% include nl/header.html %}
 </header>
 
 <script type="text/javascript">
@@ -84,43 +84,42 @@ function check_form()
 <section class="wrapper two-cols two-nav-cols with-border">
 	<div class="col">
 		<div class="content">
-			<h1>Hire Me</h1>
-			<p>So you'd like to work together? Great!</p>
-			<p>You can hire me by sending me an email message at <a href="mailto:hello@builtinbruges.com">hello@builtinbruges.com</a> or by filling out the form below. Try to enter a short message about your project or the services you'd require and I'll get back in touch with you as quickly as possible. Cheers!</p>
+			<h1>Contacteer Mij</h1>
+			<p>Contact met me opnemen om mij in te huren kan vrijblijven met het onderstaande formulier of door me een mailtje te sturen op <a href="mailto:hallo@builtinbruges.com">hallo@builtinbruges.com</a>. Probeer een beknopte boodschap na te laten over je project of over de diensten die je eventueel zou nodig hebben en dan contacteer ik je zo snel mogelijk! Bedankt!</p>
 		</div>
 		<form class="contact-form" action="/php/hire-me.php" method="POST" onsubmit="return check_form();">
-			<input type="hidden" name="lang" value="en" />
+			<input type="hidden" name="lang" value="nl" />
 			<div class="field">
-				<label for="name">Name *</label>
+				<label for="name">Naam *</label>
 				<input type="text" name="name" id="name" onkeyup="key_pressed()" autofocus />
 			</div>
 			<div class="field">
-				<label for="company">Company</label>
+				<label for="company">Bedrijf</label>
 				<input type="text" name="company" id="company" onkeyup="key_pressed()" />
 			</div>
 			<div class="field">
-				<label for="email">E-mail address *</label>
+				<label for="email">E-mail adres *</label>
 				<input type="text" name="email" id="email" onkeyup="key_pressed()" />
 			</div>
 			<div class="field">
-				<label for="message">Message *</label>
+				<label for="message">Bericht *</label>
 				<textarea name="message" id="message" onkeyup="key_pressed()"></textarea>
 			</div>
 			<div class="field button">
 				<label>&nbsp;</label>
-				<input type="submit" value="Send Message" class="cta-button" />
+				<input type="submit" value="Stuur Bericht" class="cta-button" />
 			</div>
 		</form>
 	</div>
 	<aside class="col">
 		<div class="ca">
-			{% include en/contact-information.html %}
-			{% include en/contact-map.html %}
-			{% include en/contact-financial.html %}
-			{% include en/navigation.html %}
+			{% include nl/contact-information.html %}
+			{% include nl/contact-map.html %}
+			{% include nl/contact-financial.html %}
+			{% include nl/navigation.html %}
 		</div>
 	</aside>
 </section>
 
-{% include en/footer.html %}
+{% include nl/footer.html %}
 

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html{% if page.lang != nil and page.lang != empty %} lang="{{ page.lang }}"{% endif %}>
+	{% include head.html %}
+	<body class="blog-post{% if page.body_class %} {{ page.body_class }}{% endif %}">
+		<header>
+			{% include en/header.html %}
+		</header>
+		<section class="wrapper two-cols two-nav-cols with-border">
+			<div class="col">
+				<div class="markdown content">
+					<h1>
+						{% if page.source_url == nil %}<em class="pretzel" title="Pretzels, iemand?">&#x2318;</em> {% endif %}
+						{% if page.source_url != nil %}
+						<a href="{{ page.source_url }}">{{ page.title }}</a>
+						{% else %}
+						{{ page.title }}
+						{% endif %}
+					</h1>
+					{{ content }}
+				</div>
+				<ul class="post-nav">
+					{% if page.previous != nil %}
+					<li>
+						<a href="{{ page.previous.url }}">
+							<span class="ss-left"></span>
+							{{ page.previous.title}}
+						</a>
+					</li>
+					{% endif %}
+					{% if page.next != nil %}
+					<li>
+						<a href="{{ page.next.url }}">
+							<span class="ss-right"></span>
+							{{ page.next.title}}
+						</a>
+					</li>
+					{% endif %}
+				</ul>
+				<div class="posts">
+					<div class="content">
+						<h3>Recente blogposts (en)</h3>
+					</div>
+					<ul>
+					{% for post in site.posts limit: 5 %}
+						<li>
+							<a href="{{ post.url }}"{% if post.description != nil %} title="{{ post.description | escape }}"{% endif %}>
+								<h3>
+									{% if post.source_url == nil %}<em class="pretzel" title="Pretzels, anyone?">&#x2318;</em> {% endif %}
+									{{ post.title }}
+								</h3>
+								<time datetime="{{ post.date }}">{{ post.date | date: "%B %Y" }}</time>
+							</a>
+						</li>
+					{% endfor %}
+					</ul>
+				</div>
+			</div>
+			<aside class="col">
+				<div class="content ca">
+					{% include nl/contact-subscribe.html %}
+					{% include nl/contact-information.html %}
+					{% include nl/contact-map.html %}
+					{% include nl/contact-financial.html %}
+					{% include nl/navigation.html %}
+				</div>
+			</aside>
+		</section>
+		{% include nl/floormat.html %}
+		{% include nl/footer.html %}
+	</body>
+</html>

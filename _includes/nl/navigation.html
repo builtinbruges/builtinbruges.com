@@ -1,0 +1,8 @@
+<nav>
+	<ul>
+		<li{% if page.url == '/nl/over-mij/' %} class="active"{% endif %}><a href="/nl/over-mij/" onclick="ga('send', 'event', 'About Me', 'visit', 'Click from navigation');">Over Mij<span class="ss-right"></span></a></li>
+		<li{% if page.url == '/nl/werk/' %} class="active"{% endif %}><a href="/nl/werk/" onclick="ga('send', 'event', 'My Work', 'visit', 'Click from navigation');">Portfolio<span class="ss-right"></span></a></li>
+		<!-- <li{% if page.url == '/en/blog/' %} class="active"{% endif %}><a href="/en/blog/" onclick="ga('send', 'event', 'Blog', 'visit', 'Click from navigation');">Blog (EN)<span class="ss-right"></span></a></li> -->
+		<li{% if page.url == '/nl/contacteer-me/' %} class="active"{% endif %}><a href="/nl/contacteer-me/" onclick="ga('send', 'event', 'Hire Me', 'visit', 'Click from navigation');">Contacteer Me<span class="ss-right"></span></a></li>
+	</ul>
+</nav>
