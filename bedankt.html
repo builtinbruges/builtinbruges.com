@@ -1,0 +1,43 @@
+---
+title: Bedankt!
+
+permalink: nl/bedankt/
+layout: nl/default
+lang: nl
+body_class: thanks
+---
+
+<header>
+	{% include nl/header.html %}
+</header>
+
+<script>
+
+$(document).ready(function ()
+{
+	ga('send', 'event', 'Hire Me', 'completed', 'Hire me form completed!');
+});
+
+</script>
+
+<section class="wrapper two-cols two-nav-cols with-border">
+	<div class="col">
+		<div class="content ca">
+			<h1>Bedankt!</h1>
+			<span class="heart-icon"><span class="ss-heart"></span></span>
+			<h4>Bedankt om me te contacteren! <br /> Ik contacteer je zo snel mogelijk terug!</h4>
+			<h4><a href="/">Klik hier om terug te gaan naar de homepagina!</a></h4>
+		</div>
+	</div>
+	<aside class="col">
+		<div class="ca">
+			{% include nl/contact-information.html %}
+			{% include nl/contact-map.html %}
+			{% include nl/contact-financial.html %}
+			{% include nl/navigation.html %}
+		</div>
+	</aside>
+</section>
+
+{% include nl/footer.html %}
+

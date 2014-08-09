@@ -4,6 +4,8 @@ function is_email($str)
 	return (filter_var($str, FILTER_VALIDATE_EMAIL) === false) ? false : true;
 }
 
+$lang    = (isset($_POST['lang'])) ? $_POST['lang'] : 'en';
+
 $name    = (isset($_POST['name'])) ? $_POST['name'] : '';
 $company = (isset($_POST['company'])) ? $_POST['company'] : '-';
 $email   = (isset($_POST['email'])) ? $_POST['email'] : '';
@@ -37,5 +39,12 @@ $headers .= 'Reply-To: '.$email."\r\n" .
 
 mail($to, $subject, $message, $headers);
 
-header('Location: /en/thanks/');
+if ($lang == 'en')
+{
+	header('Location: /en/thanks/');
+}
+else if ($lang == 'nl')
+{
+	header('Location: /nl/bedankt/');
+}
 die(0);
