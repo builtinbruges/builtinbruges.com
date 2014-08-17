@@ -4,7 +4,7 @@
 	{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 	<meta property="og:title" content="{{ page.title }}" />
 	{% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
-	<meta property="og:image" content="http://www.builtinbruges.com/assets/img/og-logo@2x.jpg" />
+	<meta property="og:image" content="http://www.builtinbruges.com/img/og-logo@2x.jpg" />
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="{{ site.description }}">
@@ -19,6 +19,12 @@
 	<link rel="stylesheet" href="{{ "/css/ss-glyphish-outlined.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 	<link rel="stylesheet" href="{{ "/css/pygments.css" | prepend: site.baseurl }}">
+
+	<!-- FavIcons -->
+	<link rel="icon" href="/favicon.ico">
+	<link rel="icon" href="/favicon-32.png" sizes="32x32">
+	<link rel="icon" href="/favicon-128.png" sizes="128x128">
+	<link rel="icon" href="/favicon-256.png" sizes="256x256">
 
 	<!-- TypeKit -->
 	<script type="text/javascript" src="//use.typekit.net/{{ site.typekit.kit_id }}.js"></script>
