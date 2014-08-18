@@ -1,9 +1,9 @@
 ---
 title: Algemene Voorwaarden
 description: Algemene Factuur en Betalingsvoorwaarden
-layout: en/post
+layout: nl/post
 lang: nl
-permalink: algemene-voorwaarden/
+permalink: nl/algemene-voorwaarden/
 ---
 
 ### 1. Toepassing van de algemene voorwaarden
