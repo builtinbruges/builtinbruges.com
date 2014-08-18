@@ -31,4 +31,4 @@ analytics:
   tracker_id: UA-40297203-1
   tracker_domain: builtinbruges.com
 
-exclude: [README.md, Gemfile, Gemfile.lock]
+exclude: [README.md, Gemfile, Gemfile.lock, publish.sh]
