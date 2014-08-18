@@ -12,7 +12,13 @@
 	{% if page.source_url == nil %}
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	{% endif  %}
+
 	<link rel="alternate" type="application/atom+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
+	{% if page.alternate != nil %}
+	{% for alternate in page.alternate %}
+	<link rel="alternate" hreflang="{{ alternate.lang }}" href="{{ alternate.href }}" />
+	{% endfor %}
+	{% endif %}
 
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="{{ "/css/reset.css" | prepend: site.baseurl }}">
