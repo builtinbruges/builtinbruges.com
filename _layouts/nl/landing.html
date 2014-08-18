@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html{% if page.lang != nil and page.lang != empty %} lang="{{ page.lang }}"{% endif %}>
+	{% include head.html %}
+	<body class="blog-post{% if page.body_class %} {{ page.body_class }}{% endif %}">
+		<header>
+			{% include nl/header.html %}
+		</header>
+		<section class="wrapper two-cols two-nav-cols with-border">
+			<div class="col">
+				<div class="markdown content">
+					<h1>{{ page.title }}</h1>
+					{{ content }}
+				</div>
+			</div>
+			<aside class="col">
+				<div class="content ca">
+					{% include nl/contact-subscribe.html %}
+					{% include nl/contact-information.html %}
+					{% include nl/contact-map.html %}
+					{% include nl/contact-financial.html %}
+					{% include nl/navigation.html %}
+				</div>
+			</aside>
+		</section>
+		{% include nl/floormat.html %}
+		{% include nl/footer.html %}
+	</body>
+</html>
