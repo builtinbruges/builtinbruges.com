@@ -11,7 +11,6 @@ layout: null
 	<updated>{{ 'now' | date: '%FT%T%z'}}</updated>
 	<rights>Copyright © {{ 'now' | date: '%Y'}}, {{ site.author.name }}</rights>
 	{% for post in site.posts limit:15 %}
-	{% if post.lang == "en" %}
 	<entry>
 		<title>{{ post.title | xml_escape }}</title>
 		{% if post.source_url != null and post.source_url != empty %}<link rel="alternate" type="text/html" href="{{ post.source_url }}"/>{% endif %}
@@ -22,8 +21,7 @@ layout: null
 			<name>{{ site.author.name }}</name>
 			<uri>{{ site.url }}/</uri>
 		</author>
-		<content type="html" xml:lang="en"><![CDATA[{{ post.content }}]]></content>
+		<content type="html" xml:lang="{{ post.lang }}"><![CDATA[{{ post.content }}]]></content>
 	</entry>
-	{% endif %}
 	{% endfor %}
 </feed>

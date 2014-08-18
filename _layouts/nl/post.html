@@ -18,30 +18,13 @@
 					</h1>
 					{{ content }}
 				</div>
-				<ul class="post-nav">
-					{% if page.previous != nil %}
-					<li>
-						<a href="{{ page.previous.url }}">
-							<span class="ss-left"></span>
-							{{ page.previous.title}}
-						</a>
-					</li>
-					{% endif %}
-					{% if page.next != nil %}
-					<li>
-						<a href="{{ page.next.url }}">
-							<span class="ss-right"></span>
-							{{ page.next.title}}
-						</a>
-					</li>
-					{% endif %}
-				</ul>
 				<div class="posts">
 					<div class="content">
-						<h3>Recente blogposts (en)</h3>
+						<h3>Recente blogposts</h3>
 					</div>
 					<ul>
 					{% for post in site.posts limit: 5 %}
+						{% if post.lang == "nl" %}
 						<li>
 							<a href="{{ post.url }}"{% if post.description != nil %} title="{{ post.description | escape }}"{% endif %}>
 								<h3>
@@ -51,6 +34,7 @@
 								<time datetime="{{ post.date }}">{{ post.date | date: "%B %Y" }}</time>
 							</a>
 						</li>
+						{% endif %}
 					{% endfor %}
 					</ul>
 				</div>
