@@ -39,4 +39,4 @@ Redirect 301 /blog.html http://www.builtinbruges.com/en/blog/
 Redirect 301 /archive.html http://www.builtinbruges.com/en/blog/
 Redirect 301 /contact.html http://www.builtinbruges.com/en/hire-me/
 Redirect 301 /clients.html http://www.builtinbruges.com/en/work/
-Redirect 301 /nl/home http://www.builtinbruges.com/
+Redirect 301 /nl/werk http://www.builtinbruges.com/nl/portfolio
