@@ -8,7 +8,7 @@ The blog is built in `jekyll` v2.2. Run `bundle install` to install all required
 
 ## Running/building this blog locally
 
-Make sure all requirements are installed and run `jekyll build`. All content from the folder will be generated in a folder called `_site`. To serve this blog locally on http://0.0.0.0:4000, run `jekyll serve --watch`.
+Make sure all requirements are installed and run `jekyll build`. All content from the folder will be generated in a folder called `_site`. To serve this blog locally on http://0.0.0.0:4000, run `jekyll serve --watch`. If you want to use an easy to use script that starts serving on http://0.0.0.0:4000 and points your browser to this address, run `./serve.sh`.
 
 ## Publishing
 
