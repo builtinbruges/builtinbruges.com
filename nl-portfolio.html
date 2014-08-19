@@ -16,7 +16,7 @@ alternate:
 sitemap:
   priority: 0.7
   changefreq: daily
-  lastmod: 2014-08-18T22:58:28+02:00
+  lastmod: 2014-08-19T14:06:23+02:00
 ---
 
 <header>
@@ -30,61 +30,25 @@ sitemap:
 			<p>Hieronder kan u een overzicht vinden van enkele van mijn recentere projecten.</p>
 		</div>
 		<ul class="portfolio">
+			{% for project in site.data.portfolio_nl %}
 			<li>
 				<div class="description content">
 					<div class="title">
-						<h3>Soviet Grass</h3>
+						<h3>{{ project.title }}</h3>
 						<div class="icons">
-							<a href="/nl/over-mij/" class="icon" title="Design"><span class="ss-spraybottle"></span></a>
-							<a href="/nl/over-mij/" class="icon" title="Coding"><span class="ss-testtube"></span></a>
+							{% if project.design == true %}<a href="/nl/over-mij/" class="icon" title="Design"><span class="ss-spraybottle"></span></a>{% endif %}
+							{% if project.development == true %}<a href="/nl/over-mij/" class="icon" title="Coding"><span class="ss-testtube"></span></a>{% endif %}
 						</div>
 					</div>
-					<p>Deze brugse band was op zoek naar een simpele maar duidelijke promotiewebsite voor de release van hun "Plastic Fingers" EP &amp; daarop aansluitende release show. Het web design volgt het design van de EP, en op de website is het mogelijk voor bezoekers om tickets of EP's te bestellen. Het project omvatte ook een print gedeelte met oa. het ontwerpen van tickets voor de show met een afscheurstrook.</p>
+					{{ project.description | markdownify }}
 				</div>
 				<ul class="pictures">
-					<li style="background-image: url(/projects/2014-sovietgrass/sovietgrass-1.jpg);"><a href="http://sovietgrass.com"></a></li>
-					<li style="background-image: url(/projects/2014-sovietgrass/sovietgrass-2.jpg);"><a href="http://sovietgrass.com"></a></li>
-					<li style="background-image: url(/projects/2014-sovietgrass/sovietgrass-3.jpg);"><a href="http://sovietgrass.com"></a></li>
+					<li style="background-image: url({{ project.img_url }}-1.jpg);"><a href="http://sovietgrass.com"></a></li>
+					<li style="background-image: url({{ project.img_url }}-2.jpg);"><a href="http://sovietgrass.com"></a></li>
+					<li style="background-image: url({{ project.img_url }}-3.jpg);"><a href="http://sovietgrass.com"></a></li>
 				</ul>
 			</li>
-			<li>
-				<div class="description content">
-					<div class="title">
-						<h3>dfind</h3>
-						<div class="icons">
-							<a href="/nl/over-mij/" class="icon" title="Design"><span class="ss-spraybottle"></span></a>
-							<a href="/nl/over-mij/" class="icon" title="Coding"><span class="ss-testtube"></span></a>
-						</div>
-					</div>
-					<p>
-						Dfind is een vintage design gallerij in het hart van Brugge met onder andere meubilair, verlichting, en interieurdecoratie. Ik werkte aan het web design en voerde de programmatie uit met een sterke focus op SEO optimalisatie. Dankzij deze focus steeg het aantal conversies gevoelig. De gehele website is ook makkelijk up to date te houden dankzij het achterliggende CMS.
-					</p>
-				</div>
-				<ul class="pictures">
-					<li style="background-image: url(/projects/2013-dfind/dfind-1.jpg);"><a href="http://www.dfind.be"></a></li>
-					<li style="background-image: url(/projects/2013-dfind/dfind-2.jpg);"><a href="http://www.dfind.be"></a></li>
-					<li style="background-image: url(/projects/2013-dfind/dfind-3.jpg);"><a href="http://www.dfind.be"></a></li>
-				</ul>
-			</li>
-			<li>
-				<div class="description content">
-					<div class="title">
-						<h3>Rob Michiels</h3>
-						<div class="icons">
-							<a href="/nl/over-mij/" class="icon" title="Design"><span class="ss-spraybottle"></span></a>
-							<a href="/nl/over-mij/" class="icon" title="Coding"><span class="ss-testtube"></span></a>
-						</div>
-					</div>
-					<p>
-						Rob biedt zijn klanten een bijzondere collectie van zeldzame keramiek van over de ganse wereld aan. Met enkele musea en belangrijke private verzamelaars als klant, is hij non-stop bezig met het zoeken en aanleggen van een verzameling van over de gehele wereld. Rob gaf me een vrijgeleidde op vlak van ontwerp, en ook op gebied van programmatie is alles tot in de puntjes uitgewerkt. Door de frequente veranderingen in de collectie is het namelijk nodig dat de website vlot up-to-date kan gehouden worden door middel van een makkelijk bruikbaar CMS.
-					</p>
-				</div>
-				<ul class="pictures">
-					<li style="background-image: url(/projects/2013-robmichiels/robmichiels-1.jpg);"><a href="http://www.robmichiels.com"></a></li>
-					<li style="background-image: url(/projects/2013-robmichiels/robmichiels-2.jpg);"><a href="http://www.robmichiels.com"></a></li>
-					<li style="background-image: url(/projects/2013-robmichiels/robmichiels-3.jpg);"><a href="http://www.robmichiels.com"></a></li>
-				</ul>
-			</li>
+			{% endfor %}
 		</ul>
 		<hr />
 		<div class="content" style="margin: 50px 0;">

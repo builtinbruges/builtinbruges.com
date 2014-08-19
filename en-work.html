@@ -16,7 +16,7 @@ alternate:
 sitemap:
   priority: 0.7
   changefreq: daily
-  lastmod: 2014-08-18T22:58:19+02:00
+  lastmod: 2014-08-19T14:06:26+02:00
 ---
 
 <header>
@@ -30,63 +30,25 @@ sitemap:
 			<p>Below you can find a selection of some of my projects</p>
 		</div>
 		<ul class="portfolio">
+			{% for project in site.data.portfolio_en %}
 			<li>
 				<div class="description content">
 					<div class="title">
-						<h3>Soviet Grass</h3>
+						<h3>{{ project.title }}</h3>
 						<div class="icons">
-							<a href="/en/about-me/" class="icon" title="Design"><span class="ss-spraybottle"></span></a>
-							<a href="/en/about-me/" class="icon" title="Coding"><span class="ss-testtube"></span></a>
+							{% if project.design == true %}<a href="/en/about-me/" class="icon" title="Design"><span class="ss-spraybottle"></span></a>{% endif %}
+							{% if project.development == true %}<a href="/en/about-me/" class="icon" title="Coding"><span class="ss-testtube"></span></a>{% endif %}
 						</div>
 					</div>
-					<p>This band from <strong>Bruges</strong> needed a simple <strong>promotional website</strong> for their "Plastic Fingers" EP Release. The website design follows the EP design and has an <strong>online form</strong> linked to a <strong>CRM</strong> where people were able to <strong>order</strong> tickets for the release party. Another part of the project was to create print tickets with a tear-off strip.</p>
+					{{ project.description | markdownify }}
 				</div>
 				<ul class="pictures">
-					<li style="background-image: url(/projects/2014-sovietgrass/sovietgrass-1.jpg);"><a href="http://sovietgrass.com"></a></li>
-					<li style="background-image: url(/projects/2014-sovietgrass/sovietgrass-2.jpg);"><a href="http://sovietgrass.com"></a></li>
-					<li style="background-image: url(/projects/2014-sovietgrass/sovietgrass-3.jpg);"><a href="http://sovietgrass.com"></a></li>
+					<li style="background-image: url({{ project.img_url }}-1.jpg);"><a href="http://sovietgrass.com"></a></li>
+					<li style="background-image: url({{ project.img_url }}-2.jpg);"><a href="http://sovietgrass.com"></a></li>
+					<li style="background-image: url({{ project.img_url }}-3.jpg);"><a href="http://sovietgrass.com"></a></li>
 				</ul>
 			</li>
-			<li>
-				<div class="description content">
-					<div class="title">
-						<h3>dfind</h3>
-						<div class="icons">
-							<a href="/en/about-me/" class="icon" title="Design"><span class="ss-spraybottle"></span></a>
-							<a href="/en/about-me/" class="icon" title="Coding"><span class="ss-testtube"></span></a>
-						</div>
-					</div>
-					<p>
-						Dfind is a vintage and contemporary design gallery featuring furniture, lighting and interiour decorating items, located in the heart of Bruges. <br />
-						I worked out the <strong>website design</strong> with a <strong>strong focus</strong> on <a href="/en/about-me/"><strong>SEO</strong></a> and the whole website is updateable with an <strong>easy to use CMS</strong>.
-					</p>
-				</div>
-				<ul class="pictures">
-					<li style="background-image: url(/projects/2013-dfind/dfind-1.jpg);"><a href="http://www.dfind.be"></a></li>
-					<li style="background-image: url(/projects/2013-dfind/dfind-2.jpg);"><a href="http://www.dfind.be"></a></li>
-					<li style="background-image: url(/projects/2013-dfind/dfind-3.jpg);"><a href="http://www.dfind.be"></a></li>
-				</ul>
-			</li>
-			<li>
-				<div class="description content">
-					<div class="title">
-						<h3>Rob Michiels</h3>
-						<div class="icons">
-							<a href="/en/about-me/" class="icon" title="Design"><span class="ss-spraybottle"></span></a>
-							<a href="/en/about-me/" class="icon" title="Coding"><span class="ss-testtube"></span></a>
-						</div>
-					</div>
-					<p>
-						Rob offers a fine selection of rare ceramics from around the world. With several museums and important private collections as clients, it is a continuous journey across the world to find the rarest items of fire and earth.
-						Rob gave me an <strong>empty canvas</strong> to design the website on, and everything is updateable with an <strong>easy to use CMS</strong>.
-					</p>
-				</div>
-				<ul class="pictures">
-					<li style="background-image: url(/projects/2013-robmichiels/robmichiels-1.jpg);"><a href="http://www.robmichiels.com"></a></li>
-					<li style="background-image: url(/projects/2013-robmichiels/robmichiels-2.jpg);"><a href="http://www.robmichiels.com"></a></li>
-					<li style="background-image: url(/projects/2013-robmichiels/robmichiels-3.jpg);"><a href="http://www.robmichiels.com"></a></li>
-				</ul>
-			</li>
+			{% endfor %}
 		</ul>
 		<hr />
 		<div class="content" style="margin: 50px 0;">
