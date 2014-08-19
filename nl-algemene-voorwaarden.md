@@ -8,7 +8,7 @@ permalink: nl/algemene-voorwaarden/
 
 ### 1. Toepassing van de algemene voorwaarden
 
-**1.1** Deze algemene voorwaarden zijn van toepassing op alle aanbiedingen en overeenkomsten met Built in Bruges, ook al worden strijdige bepalingen vermeld op documenten van de klant. Door het plaatsen van een bestelling of akkoord gaan met een offerte gaat de klant automatisch akkoord met deze algemene voorwaarden
+**1.1** Deze algemene voorwaarden zijn van toepassing op alle aanbiedingen en overeenkomsten met Built in Bruges, ook al worden strijdige bepalingen vermeld op documenten van de klant. Door het plaatsen van een bestelling of akkoord gaan met een offerte gaat de klant automatisch akkoord met deze algemene voorwaarden.
 
 ### 2. Aanbieding en annulatie
 
@@ -16,7 +16,7 @@ permalink: nl/algemene-voorwaarden/
 
 **2.2** De annulatie van de bestelling is mogelijk zolang Built in Bruges nog geen werkzaamheden heeft uitgevoerd, mits een betaling van een schadevergoeding van 20% van de overeengekomen prijs, met een minimum van € 250. Indien de werkzaamheden reeds zijn aangevat moeten bovenop de schadevergoeding de reeds gepresteerde uren ook vergoed worden.
 
-**2.3** Aanbiedingen of offertes van Built in Bruges zijn indicatief en in geen geval bindend voor een finaal factuurbedrag. Het uiteindelijke factuurbedrag wordt telkens berekend op het aantal gepresteerde uren. Het is mogelijk dat het finaal aantal gepresteerde uren afwijkt van de raming die werd doorgegeven op de offerte
+**2.3** Aanbiedingen of ramingen op *uurbasis* van Built in Bruges zijn indicatief en in geen geval bindend voor een finaal factuurbedrag. Het uiteindelijke factuurbedrag voor ramingen wordt telkens berekend op het aantal effectief gepresteerde uren. Het is mogelijk dat het finaal aantal gepresteerde uren afwijkt van de raming die werd doorgegeven.
 
 ### 3. Levering
 
@@ -31,6 +31,8 @@ permalink: nl/algemene-voorwaarden/
 **4.2** Indien de klant niet overgaat tot betaling binnen de 14 dagen na ontvangst van een aanmaning, is de klant een nalatigheidsintrest verschuldigd aan Built in Bruges van 15% per zes maanden. Bovendien behoudt Built in Bruges zich het recht om extra verbintenissen op te schorten tot de klant is overgegaan tot betaling van de vervallen facturen.
 
 **4.3** Elk protest in verband met de factuur dient per aangetekende brief aan Built in Bruges overgemaakt te worden binnen de 8 dagen na factuurdatum.
+
+**4.4** Er wordt pas gestart met de werkzaamheden die omschreven zijn in een offerte **na betaling van 50% voorschot** van het totaalbedrag. Na voltooiing van het project worden alle bronbestanden doorgespeeld naar de klant, **na** betaling van het **resterende bedrag**. Dit is omdat Built in Bruges uit ervaring weet dat sommige projecten anders nooit opgeleverd raken omdat in een laatste fase dikwijls gewacht moet worden op bv. content ingevave van de klant. Built in Bruges kan dus al **daarvoor** de eindfactuur opsturen.
 
 ### 5. Aansprakelijkheid
 
