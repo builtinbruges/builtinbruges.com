@@ -4,6 +4,11 @@ description: Algemene Factuur en Betalingsvoorwaarden
 layout: nl/post
 lang: nl
 permalink: nl/algemene-voorwaarden/
+
+sitemap:
+  priority: 0.5
+  changefreq: weekly
+  lastmod: 2014-08-21T09:30:10+02:00
 ---
 
 ### 1. Toepassing van de algemene voorwaarden
