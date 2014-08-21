@@ -8,7 +8,7 @@ permalink: nl/algemene-voorwaarden/
 sitemap:
   priority: 0.5
   changefreq: weekly
-  lastmod: 2014-08-21T09:30:10+02:00
+  lastmod: 2014-08-21T09:41:34+02:00
 ---
 
 ### 1. Toepassing van de algemene voorwaarden
@@ -39,7 +39,7 @@ sitemap:
 
 **4.4** Er wordt pas gestart met de werkzaamheden die omschreven zijn in een offerte **na betaling van 50% voorschot** van het totaalbedrag. Na voltooiing van het project worden alle bronbestanden doorgespeeld naar de klant, **na** betaling van het **resterende bedrag**. Dit is omdat Built in Bruges uit ervaring weet dat sommige projecten anders nooit opgeleverd raken omdat in een laatste fase dikwijls gewacht moet worden op bv. content ingevave van de klant. Built in Bruges kan dus al **daarvoor** de eindfactuur opsturen.
 
-**4.5** De klant kan geen gebruik maken van de afgeleverde diensten of producten vóór betaling van het volledige budget die werd overeengekomen in de offerte / overeenkomst.
+**4.5** De klant kan geen gebruik maken van de afgeleverde diensten of producten vóór betaling van het volledige budget die werd overeengekomen in de offerte / overeenkomst. Het geleverde werk blijft eigendom van Built in Bruges tot na betaling van de volledige factuur. Na volledige betaling wordt het werk eigendom van de klant.
 
 ### 5. Aansprakelijkheid
 
@@ -62,4 +62,3 @@ sitemap:
 ### 7. Geheimhoudingsplicht
 
 **7.1** Built in Bruges verbindt er zicht toe om commerciële en technische informatie die vernomen wordt van de klant, zelfs na beëindiging van de overeenkomst, geheim te houden en enkel te gebruiken voor de correcte uitvoering van de overeenkomst.
-
