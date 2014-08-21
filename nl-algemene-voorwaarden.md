@@ -34,6 +34,8 @@ permalink: nl/algemene-voorwaarden/
 
 **4.4** Er wordt pas gestart met de werkzaamheden die omschreven zijn in een offerte **na betaling van 50% voorschot** van het totaalbedrag. Na voltooiing van het project worden alle bronbestanden doorgespeeld naar de klant, **na** betaling van het **resterende bedrag**. Dit is omdat Built in Bruges uit ervaring weet dat sommige projecten anders nooit opgeleverd raken omdat in een laatste fase dikwijls gewacht moet worden op bv. content ingevave van de klant. Built in Bruges kan dus al **daarvoor** de eindfactuur opsturen.
 
+**4.5** De klant kan geen gebruik maken van de afgeleverde diensten of producten vóór betaling van het volledige budget die werd overeengekomen in de offerte / overeenkomst.
+
 ### 5. Aansprakelijkheid
 
 **5.1** Built in Bruges verbindt er zich toe om alle te verstrekken diensten met grote zorg uit te voeren. Built in Bruges is echter niet aansprakelijk voor eventuele fouten in de uitvoering die te wijten zijn aan onvoldoende of verkeerde input van de klant.
