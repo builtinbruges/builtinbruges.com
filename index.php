@@ -1,4 +1,10 @@
 <?PHP
-header('HTTP/1.1 301 Moved Permanently');
-header('Location: http://www.builtinbruges.com/nl/home');
-
+// Redirect based on accept_language
+if (ereg("nl", $_SERVER['HTTP_ACCEPT_LANGUAGE']))
+{
+	header("Location: http://www.builtinbruges.com/nl/home");
+}
+else
+{
+	header("Location: http://www.builtinbruges.com/en/home");
+}
