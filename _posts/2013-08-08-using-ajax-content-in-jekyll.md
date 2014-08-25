@@ -44,6 +44,9 @@ Note: the above snippet asumes you're also using jQuery on your website.
 
 Extra additions or feedback? Check out [the repository on GitHub][jekyll-ajax]!
 
+**Update 2014-08-25:** I updated the snippet in a new post so it also works with universal analytics. Check out this [revisited blog post][revisited-post-url].
+
 [previous-post-url]: /2013/07/why-javascript-web-applications-should-embrace-traditional-urls/
+[revisited-post-url]: /2014/08/using-ajax-content-in-jekyll-updated-for-universal-analytics/
 [jekyll-ajax]: https://github.com/joelhans/Jekyll-AJAX
 [jekyll-ajax-contributions]: https://github.com/joelhans/Jekyll-AJAX/graphs/contributors
