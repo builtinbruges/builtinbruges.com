@@ -16,7 +16,7 @@ alternate:
 sitemap:
   priority: 0.7
   changefreq: daily
-  lastmod: 2014-08-25T23:00:34+02:00
+  lastmod: 2014-08-25T23:22:10+02:00
 ---
 
 <header>
@@ -31,21 +31,22 @@ sitemap:
 		</div>
 		<ul class="portfolio">
 			{% for project in site.data.portfolio_nl %}
-			<li>
+			<li itemscope itemtype="http://schema.org/WebSite">
+				<meta itemprop="image" content="{{ project.img_url }}-1.jpg">
 				<div class="description content">
 					<div class="title">
-						<h3>{{ project.title }}</h3>
+						<h3 itemprop="name">{{ project.title }}</h3>
 						<div class="icons">
 							{% if project.design == true %}<a href="/nl/over-mij/" class="icon" title="Design"><span class="ss-spraybottle"></span></a>{% endif %}
 							{% if project.development == true %}<a href="/nl/over-mij/" class="icon" title="Coding"><span class="ss-testtube"></span></a>{% endif %}
 						</div>
 					</div>
-					{{ project.description | markdownify }}
+					<div itemprop="description">{{ project.description | markdownify }}</div>
 				</div>
 				<ul class="pictures">
-					<li style="background-image: url({{ project.img_url }}-1.jpg);"><a href="http://sovietgrass.com"></a></li>
-					<li style="background-image: url({{ project.img_url }}-2.jpg);"><a href="http://sovietgrass.com"></a></li>
-					<li style="background-image: url({{ project.img_url }}-3.jpg);"><a href="http://sovietgrass.com"></a></li>
+					<li style="background-image: url({{ project.img_url }}-1.jpg);"><a itemprop="url" href="{{ project.url }}"></a></li>
+					<li style="background-image: url({{ project.img_url }}-2.jpg);"><a href="{{ project.url }}"></a></li>
+					<li style="background-image: url({{ project.img_url }}-3.jpg);"><a href="{{ project.url }}"></a></li>
 				</ul>
 			</li>
 			{% endfor %}

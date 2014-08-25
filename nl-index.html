@@ -16,7 +16,7 @@ alternate:
 sitemap:
   priority: 1
   changefreq: daily
-  lastmod: 2014-08-25T23:00:19+02:00
+  lastmod: 2014-08-25T23:25:13+02:00
 ---
 
 <header>
@@ -75,7 +75,15 @@ sitemap:
 				{% include nl/services-backend.html %}
 			</a>
 		</div>
-		<div class="col content">
+		<div class="col content" itemscope itemtype="http://schema.org/Organization">
+			<meta itemprop="name" content="Built in Bruges">
+			<meta itemprop="logo" content="http://www.builtinbruges.com/img/og-logo@2x.jpg">
+			<meta itemprop="vatID" content="BTW BE 0538.723.350">
+			<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+				<meta itemprop="streetAddress" content="Julius en Maurits Sabbestraat 40">
+				<meta itemprop="postalCode" content="8000">
+				<meta itemprop="addressLocality" content="Brugge, Belgi&euml;">
+			</div>
 			{% include nl/contact-information.html %}
 		</div>
 	</section>
