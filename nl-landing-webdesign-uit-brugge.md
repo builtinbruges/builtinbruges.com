@@ -35,4 +35,4 @@ Hoe je het draait of keert: een degelijke website is anno 2014 een onmisbare mar
 
 ### Het zit hem in de details
 
-Een goed design gaat niet enkel over hoe een website er uitziet, maar ook over hoe hij werkt en hoe gebruiksvriendelijk hij is. Vandaar dat u bij mij terecht kan voor websites die er niet enkel goed uitzien maar die ook goed en snel werken.
+Een goed design gaat niet enkel over hoe een website er uitziet, maar ook over hoe hij werkt en hoe gebruiksvriendelijk hij is. Bij mij kan u terecht voor websites die er niet enkel goed uitzien maar die ook goed en snel werken.
