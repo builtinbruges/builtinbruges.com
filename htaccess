@@ -45,3 +45,4 @@ Redirect 301 /contact.html http://www.builtinbruges.com/en/hire-me/
 Redirect 301 /clients.html http://www.builtinbruges.com/en/work/
 Redirect 301 /nl/werk http://www.builtinbruges.com/nl/portfolio
 Redirect 301 /algemene-voorwaarden http://www.builtinbruges.com/nl/algemene-voorwaarden
+Redirect 301 /index.html http://www.builtinbruges.com/index.php
