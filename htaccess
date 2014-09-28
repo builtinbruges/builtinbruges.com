@@ -4,6 +4,10 @@ permalink: .htaccess
 ---
 Header set X-UA-Compatible "IE=Edge,chrome=1"
 
+# disable apache server signature
+ServerSignature Off
+
+# enable url rewriting
 RewriteEngine On
 
 # builtinbruges.com => www.builtinbruges.com
