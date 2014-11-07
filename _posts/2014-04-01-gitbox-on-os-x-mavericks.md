@@ -44,9 +44,14 @@ These two commands made sure I never have to truncate my preference file and add
 
 Let's hope the [developer][oleganza] breaks the radio silence surrounding Gitbox and releases an update with a whole lot of bugfixes [anytime now][twitter-mavericks-soon].
 
+## Update November 2014
+
+I wrote another article about the [new set of issues this application has when you're running OS X 10.10 Yosemite][yosemite-problems].
+
 [gitbox]: http://www.gitboxapp.com
 [oleganza]: https://twitter.com/oleganza
 [app-nap]: http://www.apple.com/osx/advanced-technologies/
 [twitter-main-window]: https://twitter.com/search?q=Gitbox%20main%20window
 [twitter-search]: https://twitter.com/search?q=Gitbox%20update
 [twitter-mavericks-soon]: https://twitter.com/gitboxapp/status/393259537517789184
+[yosemite-problems]: /2014/11/getting-gitbox-to-run-on-os-x-10-10-yosemite/
