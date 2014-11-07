@@ -18,6 +18,7 @@
 					</h1>
 					{{ content }}
 				</div>
+				<!--
 				<ul class="post-nav">
 					{% if page.previous != nil %}
 					<li>
@@ -36,9 +37,10 @@
 					</li>
 					{% endif %}
 				</ul>
+				-->
 				<div class="posts">
 					<div class="content">
-						<h3>Recent posts</h3>
+						<h3>Other recent posts</h3>
 					</div>
 					<ul>
 					{% for post in site.posts limit: 5 %}
