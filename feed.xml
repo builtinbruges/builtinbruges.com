@@ -15,7 +15,6 @@ layout: null
 	<entry>
 		<title>{{ post.title | xml_escape }}</title>
 		{% if post.source_url != null and post.source_url != empty %}<link rel="alternate" type="text/html" href="{{ post.source_url }}"/>{% endif %}
-		<link rel="related" type="text/html" href="{{ site.url }}/linked/2014/08/06/apple-samsung-patents"/>
 		<published>{% if post.updated_at != null and post.updated_at != empty %}{{ post.updated_at | date: '%FT%T%z'}}{% else %}{{ post.date | date: '%FT%T%z'}}{% endif %}</published>
 		<updated>{{ post.date | date: '%FT%T%z'}}</updated>
 		<author>
