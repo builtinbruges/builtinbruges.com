@@ -66,3 +66,26 @@ Redirect 301 /clients.html http://www.builtinbruges.com/en/work/
 Redirect 301 /nl/werk http://www.builtinbruges.com/nl/portfolio
 Redirect 301 /algemene-voorwaarden http://www.builtinbruges.com/nl/algemene-voorwaarden
 Redirect 301 /index.html http://www.builtinbruges.com/index.php
+
+# Block Russian Referrer Spam
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly.\.ru/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.org/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*ilovevitaly\.info/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*iloveitaly\.ru/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*econom\.co/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*savetubevideo\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*kambasoft\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*buttons\-for\-website\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*floating\-share\-buttons\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*semalt\.com/ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http://.*darodar\.com/ [NC]
+RewriteCond %{HTTP_REFERER} ^http://.*4webmasters\.com/ [NC]
+RewriteCond %{HTTP_REFERER} ^http://.*trafficmonetizer\.org/ [NC]
+RewriteCond %{HTTP_REFERER} ^http://.*traffic2money\.com/ [NC]
+RewriteCond %{HTTP_REFERER} ^http://.*success\-seo\.com/ [NC]
+RewriteCond %{HTTP_REFERER} ^http://.*event\-tracking\.com/ [NC]
+RewriteCond %{HTTP_REFERER} ^http://.*webmonetizer\.net/ [NC]
+RewriteRule ^(.*)$ – [F,L]
+
